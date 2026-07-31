@@ -481,14 +481,10 @@ button {
 }
 
 .filter-panel {
-  position: sticky;
-  top: calc(var(--header-height) + 12px);
-  z-index: 20;
   margin-top: 2.8rem;
   padding: 1.25rem;
   border: 1px solid var(--gray-200);
-  background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(12px);
+  background: var(--white);
 }
 
 .filter-panel label {
@@ -1338,8 +1334,6 @@ button {
   }
 
   .filter-panel {
-    position: relative;
-    top: auto;
     padding: 1rem;
   }
 
