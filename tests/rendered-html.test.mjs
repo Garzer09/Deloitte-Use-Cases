@@ -38,6 +38,7 @@ test("renders the audited Copilot use-case bank", async () => {
   assert.match(html, /TRV-01/);
   assert.match(html, /Explorar los casos/);
   assert.match(html, /Encuentra la opción adecuada/);
+  assert.doesNotMatch(html, /base v0\.1|incorporados|>117<|>88</i);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
 });
 

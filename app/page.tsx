@@ -457,16 +457,12 @@ export default function Home() {
             <span className="summary-title">casos navegables</span>
             <div className="summary-breakdown">
               <div>
-                <b>117</b>
-                <span>base v0.1</span>
-              </div>
-              <div>
-                <b>88</b>
-                <span>incorporados</span>
-              </div>
-              <div>
                 <b>5</b>
                 <span>áreas Deloitte</span>
+              </div>
+              <div>
+                <b>3</b>
+                <span>niveles de solución</span>
               </div>
             </div>
           </aside>
