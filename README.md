@@ -1,6 +1,6 @@
 # Deloitte · Banco de casos de Microsoft 365 Copilot
 
-Aplicación con 205 casos de uso, búsqueda, filtros y fichas de detalle.
+Aplicación con 217 casos de uso, búsqueda, filtros combinables y fichas de detalle. Incluye 12 nuevas prácticas comunes a todas las áreas corporativas.
 
 - Repositorio: https://github.com/Garzer09/Deloitte-Use-Cases
 - Web: https://spiralia-deloitte-use-cases.vercel.app
@@ -27,12 +27,24 @@ npx next start
 
 La aplicación principal no necesita variables de entorno ni una base de datos: los casos se leen de `data/cases.json`.
 
+## Buscar y seleccionar casos
+
+Los filtros principales son Área Deloitte, Tarea, Herramienta o capacidad y Perfil. Las opciones múltiples se suman dentro de un filtro (OR) y se cruzan entre filtros (AND). Los recuentos de cada opción mantienen el contexto de los otros filtros.
+
+Al elegir Corporativas aparece Subárea. Los casos etiquetados como comunes a todas las áreas corporativas también aparecen en cada subárea. «Común» describe aplicabilidad entre áreas; los perfiles describen quién suele ejecutar la práctica.
+
+«Más filtros» incluye preparación, relación con el troncal, aplicabilidad directa/adaptada, origen, cobertura, disponibilidad y cartera. «Nuevos primero» sitúa las 12 incorporaciones al inicio. El buscador ignora tildes y mayúsculas y busca todas las palabras, aunque estén separadas.
+
+La clasificación se revisó el 08/09/2026. Las notas funcionales anteriores conservan su fecha original: no se ha convertido una revisión editorial en una nueva auditoría de producto. Consulta [los criterios del catálogo](docs/criterios-catalogo.md).
+
 ## Dónde hacer cambios
 
 | Archivo | Contenido |
 | --- | --- |
 | `data/cases.json` | Casos de uso y sus campos |
-| `app/page.tsx` | Página, búsqueda, filtros y fichas |
+| `app/page.tsx` | Página y fichas de los casos |
+| `app/catalogue-filters.tsx` | Controles de filtros, recuentos y selecciones activas |
+| `lib/catalogue.ts` | Taxonomía, búsqueda y reglas de combinación |
 | `app/globals.css` | Estilos y diseño adaptable |
 | `app/layout.tsx` | Título, metadatos e iconos |
 | `public/` | Imágenes y marcas |
@@ -62,8 +74,8 @@ El proyecto original también incluye Vinext y soporte opcional para Sites/Cloud
 Se conservan `worker/`, `build/`, `.openai/hosting.json`, `db/`, `drizzle/` y `examples/d1/` para mantener esa compatibilidad. Las carpetas de base de datos contienen soporte opcional y ejemplos, no una dependencia de la aplicación principal.
 
 ```bash
-npm test       # Compila con Vinext y verifica el HTML y los 205 casos.
+npm test       # Compila con Vinext y verifica los filtros, el HTML y los 217 casos.
 npm run lint  # Revisión de código.
 ```
 
-Las marcas visuales existentes se mantienen por autorización expresa para este proyecto.
+La identidad visual del entregable utiliza únicamente la marca Deloitte, conforme a las normas del proyecto.
