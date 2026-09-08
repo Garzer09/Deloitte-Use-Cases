@@ -23,7 +23,7 @@ async function render() {
   );
 }
 
-test("renders the audited Copilot use-case bank", async () => {
+test("renders the searchable Copilot use-case bank", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
@@ -31,24 +31,36 @@ test("renders the audited Copilot use-case bank", async () => {
   const html = await response.text();
   assert.match(
     html,
-    /<title>Banco de casos de uso · Microsoft 365 Copilot · Deloitte × Spiralia<\/title>/i,
+    /<title>Banco de casos de uso · Microsoft 365 Copilot · Deloitte<\/title>/i,
   );
   assert.match(html, /Un banco de casos para/);
-  assert.match(html, />205</);
+  assert.match(html, />227</);
   assert.match(html, /TRV-01/);
   assert.match(html, /Explorar los casos/);
   assert.match(html, /Encuentra la opción adecuada/);
+  assert.match(html, /Herramienta o capacidad/);
+  assert.match(html, /Nivel profesional/);
+  assert.match(html, /Staff/);
+  assert.match(html, /Managers/);
+  assert.match(html, /Directores \/ Socios/);
+  assert.match(html, /Agentes de SharePoint/);
+  assert.doesNotMatch(html, /<legend>Perfil<\/legend>|Administrativo y secretariado|Técnico o especialista/);
+  assert.match(html, /Más filtros/);
+  assert.match(html, /Relación con el troncal/);
+  assert.match(html, /Nuevos primero/);
+  assert.doesNotMatch(html, /Spiralia|spiralia-logo|spiralia-wordmark|spiralia-symbol|og\.png/);
+  assert.ok(html.indexOf('id="banco"') < html.indexOf('id="arquitectura"'));
   assert.doesNotMatch(html, /base v0\.1|incorporados|>117<|>88</i);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
 });
 
-test("keeps all 205 cases complete and uniquely identified", async () => {
+test("keeps all 227 cases complete and uniquely identified", async () => {
   const source = JSON.parse(
     await readFile(new URL("../data/cases.json", import.meta.url), "utf8"),
   );
-  assert.equal(source.total, 205);
-  assert.equal(source.cases.length, 205);
-  assert.equal(new Set(source.cases.map((item) => item.id)).size, 205);
+  assert.equal(source.total, 227);
+  assert.equal(source.cases.length, 227);
+  assert.equal(new Set(source.cases.map((item) => item.id)).size, 227);
 
   const required = [
     "id",
@@ -72,11 +84,9 @@ test("keeps all 205 cases complete and uniquely identified", async () => {
   }
 });
 
-test("ships the approved co-brand assets and social card", async () => {
-  await Promise.all([
-    access(new URL("../public/brand/deloitte-logo.png", import.meta.url)),
-    access(new URL("../public/brand/spiralia-logo.png", import.meta.url)),
-    access(new URL("../public/brand/spiralia-wordmark.png", import.meta.url)),
-    access(new URL("../public/og.png", import.meta.url)),
-  ]);
+test("ships the Deloitte identity without previous co-brand assets", async () => {
+  await access(new URL("../public/brand/deloitte-logo.png", import.meta.url));
+  for (const file of ["spiralia-logo.png", "spiralia-wordmark.png", "spiralia-symbol.png"]) {
+    await assert.rejects(access(new URL(`../public/brand/${file}`, import.meta.url)));
+  }
 });

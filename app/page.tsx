@@ -3,114 +3,20 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import rawData from "@/data/cases.json";
 
-type AreaKey = "A&A" | "T&L" | "SRT" | "T&T" | "Corp";
-
-type CaseItem = {
-  id: string;
-  block: string;
-  title: string;
-  description: string;
-  primary: string;
-  involved: string;
-  areas: Record<AreaKey, string>;
-  profiles: string;
-  status: string;
-  coverage: string;
-  route: string;
-  family: string;
-  deliverable: string;
-  maturity: string;
-  level: string;
-  conditions: string;
-  humanReview: string;
-  auditFinding: string;
-  microsoftSource: string;
-  deloitteSource: string;
-};
-
-type AreaOption = {
-  key: "all" | AreaKey;
-  label: string;
-  short: string;
-  block?: string;
-};
+import { CatalogueFilters, areaOptions } from "./catalogue-filters";
+import {
+  audienceOptions, coreOptions, corporateAreaOptions, defaultFilters, filterCases,
+  labelFor, maturityType, preparationOptions, taskOptions, updateFilters,
+  type AreaKey, type CaseItem, type Filters,
+} from "@/lib/catalogue";
 
 const cases = rawData.cases as CaseItem[];
 const PAGE_SIZE = 24;
-
-const areaOptions: AreaOption[] = [
-  { key: "all", label: "Todas las áreas", short: "Todas" },
-  {
-    key: "A&A",
-    label: "Audit & Assurance",
-    short: "A&A",
-    block: "Audit & Assurance",
-  },
-  {
-    key: "T&L",
-    label: "Tax & Legal",
-    short: "T&L",
-    block: "Tax & Legal",
-  },
-  {
-    key: "SRT",
-    label: "Strategy, Risk & Transactions",
-    short: "SRT",
-    block: "Strategy, Risk & Transactions",
-  },
-  {
-    key: "T&T",
-    label: "Technology & Transformation",
-    short: "T&T",
-    block: "Technology & Transformation",
-  },
-  {
-    key: "Corp",
-    label: "Áreas Corporativas",
-    short: "Corp",
-    block: "Áreas Corporativas",
-  },
-];
-
-const blockOptions = [
-  "Transversal",
-  "Audit & Assurance",
-  "Tax & Legal",
-  "Strategy, Risk & Transactions",
-  "Technology & Transformation",
-  "Áreas Corporativas",
-];
-
-const blockRank = new Map(blockOptions.map((block, index) => [block, index]));
-
-const statusOptions = [
-  "Propuesta inicial del itinerario",
-  "En el inventario del área, a elección",
-  "Banco extendido, no incluido aún",
-];
-
-const coverageOptions = [
-  "Todos los perfiles",
-  "Mayoría del negocio",
-  "Especialista / subárea",
-];
-
-const normalize = (value: string) =>
-  value
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase();
 
 const compact = (value: string, max = 236) =>
   value.length > max ? `${value.slice(0, max).trimEnd()}…` : value;
 
 const levelShort = (level: string) => level.split(" · ")[0];
-
-const maturityType = (maturity: string) => {
-  if (maturity.toLowerCase().includes("preview")) return "Preview";
-  if (maturity.toLowerCase().includes("condicionado")) return "GA condicionado";
-  return "GA";
-};
 
 function BrandHeader() {
   return (
@@ -122,10 +28,7 @@ function BrandHeader() {
         <a href="#arquitectura">Arquitectura</a>
         <a href="#banco">Banco de casos</a>
       </nav>
-      <div className="brand-author">
-        <span>Preparado por</span>
-        <img src="/brand/spiralia-wordmark.png" alt="Spiralia" />
-      </div>
+
     </header>
   );
 }
@@ -242,6 +145,24 @@ function CaseModal({
           </span>
         </div>
 
+        <section className="case-classification" aria-label="Aplicación y preparación">
+          <dl>
+            <div><dt>Tareas</dt><dd>{item.tasks.map(v => labelFor(taskOptions, v)).join(" · ")}</dd></div>
+            <div><dt>Herramientas y capacidades</dt><dd>{item.tools.join(" · ")}</dd></div>
+            <div><dt>Niveles profesionales a los que se dirige</dt><dd>{item.audiences.map(v => labelFor(audienceOptions, v)).join(" · ")}</dd></div>
+            {item.corporateAreas.length > 0 && <div><dt>Aplicación en Corporativas</dt><dd>{item.corporateAreas.map(v => labelFor(corporateAreaOptions, v)).join(" · ")}</dd></div>}
+            <div><dt>Preparación necesaria</dt><dd>{item.preparation.map(v => labelFor(preparationOptions, v)).join(" · ")}</dd></div>
+            <div><dt>Relación con el troncal</dt><dd><strong>{labelFor(coreOptions, item.coreRelation)}</strong><p>{item.coreRationale}</p>{item.coreLessons.length > 0 && <small>Referencias del troncal: {item.coreLessons.join(" · ")}</small>}</dd></div>
+          </dl>
+        </section>
+        {item.input && <section className="modal-section practice-detail">
+          <div className="section-heading"><span className="section-kicker">Práctica propuesta</span><h3>Del material de entrada al resultado</h3></div>
+          <h4>Qué necesitas</h4><p>{item.input}</p>
+          <h4>Cómo trabajarlo</h4><ol>{item.steps?.map(step => <li key={step}>{step}</li>)}</ol>
+          <h4>Prompt de partida</h4><blockquote>{item.examplePrompt}</blockquote>
+          <p><strong>Resultado esperado:</strong> {item.deliverable}</p>
+        </section>}
+
         <section className="modal-section flow-section">
           <div className="section-heading">
             <span className="section-kicker">Flujo orientativo</span>
@@ -270,8 +191,9 @@ function CaseModal({
           </section>
 
           <section className="detail-panel audit-panel">
-            <span className="section-kicker">Criterio de auditoría</span>
+            <span className="section-kicker">Viabilidad y revisión</span>
             <p>{item.auditFinding}</p>
+            <p className="source-date">{item.addedOn ? "Propuesta añadida el 08/09/2026. Comprobar la disponibilidad en el entorno antes de impartirla." : item.reviewedOn ? "Ficha y fuentes funcionales revisadas el 08/09/2026. Comprobar la disponibilidad en el entorno antes de impartirla." : "Nota funcional del catálogo de 31/07/2026. Clasificación revisada el 08/09/2026; verificar disponibilidad actual antes de impartirlo."}</p>
             <p className="status-line">
               <strong>Cartera:</strong> {item.status}
             </p>
@@ -308,9 +230,10 @@ function CaseModal({
             <a href={item.microsoftSource} target="_blank" rel="noreferrer">
               Microsoft ↗
             </a>
-            <a href={item.deloitteSource} target="_blank" rel="noreferrer">
+            {item.additionalSources?.map(source => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>)}
+            {item.deloitteSource && <a href={item.deloitteSource} target="_blank" rel="noreferrer">
               Deloitte ↗
-            </a>
+            </a>}
           </div>
           <div className="modal-navigation">
             <button onClick={onPrevious} disabled={position === 0}>
@@ -327,103 +250,24 @@ function CaseModal({
 }
 
 export default function Home() {
-  const [query, setQuery] = useState("");
-  const [area, setArea] = useState<"all" | AreaKey>("all");
-  const [applicability, setApplicability] = useState("all");
-  const [origin, setOrigin] = useState("all");
-  const [coverage, setCoverage] = useState("all");
-  const [level, setLevel] = useState("all");
-  const [status, setStatus] = useState("all");
-  const [maturity, setMaturity] = useState("all");
-  const [sort, setSort] = useState("bank");
+  const [filters, setFilters] = useState<Filters>(defaultFilters);
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [selectedId, setSelectedId] = useState<string | null>(null);
-
-  const filtered = useMemo(() => {
-    const normalizedQuery = normalize(query.trim());
-
-    return cases
-      .filter((item) => {
-        const areaMark = area === "all" ? "" : item.areas[area];
-        const searchable = normalize(
-          [
-            item.id,
-            item.title,
-            item.description,
-            item.family,
-            item.primary,
-            item.involved,
-            item.profiles,
-            item.block,
-          ].join(" "),
-        );
-
-        return (
-          (!normalizedQuery || searchable.includes(normalizedQuery)) &&
-          (area === "all" || Boolean(areaMark)) &&
-          (applicability === "all" ||
-            area === "all" ||
-            (applicability === "direct" ? areaMark === "●" : areaMark === "○")) &&
-          (origin === "all" || item.block === origin) &&
-          (coverage === "all" || item.coverage === coverage) &&
-          (level === "all" || item.level.startsWith(level)) &&
-          (status === "all" || item.status === status) &&
-          (maturity === "all" || maturityType(item.maturity) === maturity)
-        );
-      })
-      .sort((a, b) => {
-        if (sort === "title") return a.title.localeCompare(b.title, "es");
-        if (sort === "bank") {
-          const blockDifference =
-            (blockRank.get(a.block) ?? 99) - (blockRank.get(b.block) ?? 99);
-          if (blockDifference !== 0) return blockDifference;
-        }
-        return a.id.localeCompare(b.id, "es", { numeric: true });
-      });
-  }, [applicability, area, coverage, level, maturity, origin, query, sort, status]);
-
-  const selectedIndex = selectedId
-    ? filtered.findIndex((item) => item.id === selectedId)
-    : -1;
+  const filtered = useMemo(() => filterCases(cases, filters), [filters]);
+  const selectedIndex = selectedId ? filtered.findIndex(item => item.id === selectedId) : -1;
   const selected = selectedIndex >= 0 ? filtered[selectedIndex] : null;
-
-  useEffect(() => {
+  const changeFilter = <K extends keyof Filters>(key: K, value: Filters[K]) => {
+    setFilters(current => updateFilters(current, key, value));
     setVisible(PAGE_SIZE);
-  }, [applicability, area, coverage, level, maturity, origin, query, sort, status]);
-
-  useEffect(() => {
-    if (area === "all") setApplicability("all");
-  }, [area]);
-
-  useEffect(() => {
-    if (selectedId && selectedIndex === -1) setSelectedId(null);
-  }, [selectedId, selectedIndex]);
-
-  const resetFilters = () => {
-    setQuery("");
-    setArea("all");
-    setApplicability("all");
-    setOrigin("all");
-    setCoverage("all");
-    setLevel("all");
-    setStatus("all");
-    setMaturity("all");
-    setSort("bank");
+    setSelectedId(null);
   };
-
-  const activeFilterCount = [
-    Boolean(query.trim()),
-    area !== "all",
-    applicability !== "all",
-    origin !== "all",
-    coverage !== "all",
-    level !== "all",
-    status !== "all",
-    maturity !== "all",
-  ].filter(Boolean).length;
-
+  const resetFilters = () => {
+    setFilters(defaultFilters);
+    setVisible(PAGE_SIZE);
+    setSelectedId(null);
+  };
   const chooseArea = (key: AreaKey) => {
-    setArea(key);
+    changeFilter("area", key);
     document.getElementById("banco")?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -438,7 +282,7 @@ export default function Home() {
               Un banco de casos para <span>elegir mejor.</span>
             </h1>
             <p className="hero-lead">
-              205 casos auditados y trazables para diseñar itinerarios comunes,
+              {cases.length} casos de uso para diseñar itinerarios comunes,
               específicos y especialistas en Deloitte.
             </p>
             <div className="hero-actions">
@@ -452,28 +296,97 @@ export default function Home() {
           </div>
 
           <aside className="hero-summary" aria-label="Resumen del banco">
-            <span className="summary-label">Banco auditado · 31/07/2026</span>
-            <strong>205</strong>
+            <span className="summary-label">Catálogo actualizado · 08/09/2026</span>
+            <strong>{cases.length}</strong>
             <span className="summary-title">casos navegables</span>
-            <div className="summary-breakdown">
-              <div>
-                <b>5</b>
-                <span>áreas Deloitte</span>
-              </div>
-              <div>
-                <b>3</b>
-                <span>niveles de solución</span>
-              </div>
-            </div>
+            <span className="summary-new">{cases.filter(item => item.addedOn).length} nuevos casos comunes a Corporativas</span>
           </aside>
         </section>
 
+        <section className="catalogue" id="banco">
+          <div className="catalogue-heading">
+            <div>
+              <span className="kicker">Banco de casos</span>
+              <h2>Encuentra la opción adecuada</h2>
+            </div>
+            <p>
+              Busca por tarea, nivel profesional o funcionalidad. Combina filtros para
+              seleccionar ejemplos aplicables al trabajo de cada equipo.
+            </p>
+          </div>
+
+          <CatalogueFilters items={cases} filters={filters} onChange={changeFilter} onReset={resetFilters} total={filtered.length} />
+
+          {filtered.length > 0 ? (
+            <>
+              <div className="case-grid">
+                {filtered.slice(0, visible).map((item) => {
+                  const selectedAreaMark =
+                    filters.area === "all" ? "" : item.areas[filters.area];
+                  return (
+                    <article className="case-card" key={item.id}>
+                      <div className="card-topline">
+                        <span className="case-id">{item.id}</span>
+                        <span className="card-block">{item.addedOn ? "Nuevo · Corporativas" : item.block}</span>
+                      </div>
+                      <div className="card-content">
+                        <p className="card-family">{item.family}</p>
+                        <h3>{item.title}</h3>
+                        <p className="card-description">{compact(item.description)}</p>
+                      </div>
+                      <div className="card-tags">
+                        {item.corporateAreas.includes("common") && <span>Común a Corporativas</span>}
+                        <span>{item.coverage}</span>
+                        <span>{levelShort(item.level)}</span>
+                        {selectedAreaMark && (
+                          <span className="area-fit">
+                            {selectedAreaMark === "●" ? "Aplicación directa" : "Con adaptación"}
+                          </span>
+                        )}
+                      </div>
+                      <div className="card-footer">
+                        <div>
+                          <span>Capacidad principal</span>
+                          <strong>{item.primary}</strong>
+                        </div>
+                        <button
+                          onClick={() => setSelectedId(item.id)}
+                          aria-label={`Abrir ficha de ${item.title}`}
+                        >
+                          Ver ficha y flujo →
+                        </button>
+                      </div>
+                    </article>
+                  );
+                })}
+              </div>
+
+              {visible < filtered.length && (
+                <div className="load-more">
+                  <button onClick={() => setVisible((current) => current + PAGE_SIZE)}>
+                    Mostrar {Math.min(PAGE_SIZE, filtered.length - visible)} casos más
+                  </button>
+                  <span>
+                    Mostrando {Math.min(visible, filtered.length)} de {filtered.length}
+                  </span>
+                </div>
+              )}
+            </>
+          ) : (
+            <div className="empty-state">
+              <span>0</span>
+              <h3>No hay casos con esta combinación.</h3>
+              <p>Prueba a ampliar la cobertura o limpiar alguno de los filtros.</p>
+              <button onClick={resetFilters}>Limpiar todos los filtros</button>
+            </div>
+          )}
+        </section>
         <section className="architecture" id="arquitectura">
           <div className="section-intro">
             <span className="kicker">Arquitectura recomendada</span>
             <h2>Universal donde aporta. Especialista donde importa.</h2>
             <p>
-              El objetivo no es impartir 205 casos. Es seleccionar un tronco
+              El catálogo permite seleccionar un tronco
               común y añadir laboratorios por subárea sin diluir el valor
               profesional del itinerario.
             </p>
@@ -527,203 +440,14 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="catalogue" id="banco">
-          <div className="catalogue-heading">
-            <div>
-              <span className="kicker">Banco de casos</span>
-              <h2>Encuentra la opción adecuada</h2>
-            </div>
-            <p>
-              Busca por tarea, perfil o funcionalidad. Combina filtros para
-              preparar una preselección antes de las reuniones con los negocios.
-            </p>
-          </div>
-
-          <div className="filter-panel">
-            <label className="search-field">
-              <span>Buscar</span>
-              <input
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
-                placeholder="Ej. contrato, reunión, riesgo, Excel…"
-                type="search"
-              />
-            </label>
-
-            <div className="filter-grid">
-              <label>
-                <span>Área Deloitte</span>
-                <select value={area} onChange={(event) => setArea(event.target.value as "all" | AreaKey)}>
-                  {areaOptions.map((option) => (
-                    <option value={option.key} key={option.key}>
-                      {option.label}
-                    </option>
-                  ))}
-                </select>
-              </label>
-
-              <label>
-                <span>Aplicabilidad</span>
-                <select
-                  value={applicability}
-                  onChange={(event) => setApplicability(event.target.value)}
-                  disabled={area === "all"}
-                >
-                  <option value="all">Directa + adaptada</option>
-                  <option value="direct">Aplicación directa</option>
-                  <option value="adapted">Con adaptación</option>
-                </select>
-              </label>
-
-              <label>
-                <span>Banco de origen</span>
-                <select value={origin} onChange={(event) => setOrigin(event.target.value)}>
-                  <option value="all">Todos los bloques</option>
-                  {blockOptions.map((option) => (
-                    <option value={option} key={option}>
-                      {option}
-                    </option>
-                  ))}
-                </select>
-              </label>
-
-              <label>
-                <span>Cobertura</span>
-                <select value={coverage} onChange={(event) => setCoverage(event.target.value)}>
-                  <option value="all">Todos los niveles</option>
-                  {coverageOptions.map((option) => (
-                    <option value={option} key={option}>
-                      {option}
-                    </option>
-                  ))}
-                </select>
-              </label>
-
-              <label>
-                <span>Nivel de solución</span>
-                <select value={level} onChange={(event) => setLevel(event.target.value)}>
-                  <option value="all">N1 + N2 + N3</option>
-                  <option value="N1">N1 · Nativo</option>
-                  <option value="N2">N2 · Configuración</option>
-                  <option value="N3">N3 · Integración</option>
-                </select>
-              </label>
-
-              <label>
-                <span>Madurez</span>
-                <select value={maturity} onChange={(event) => setMaturity(event.target.value)}>
-                  <option value="all">Cualquier estado</option>
-                  <option value="GA">GA</option>
-                  <option value="GA condicionado">GA condicionado</option>
-                  <option value="Preview">Preview</option>
-                </select>
-              </label>
-
-              <label>
-                <span>Cartera</span>
-                <select value={status} onChange={(event) => setStatus(event.target.value)}>
-                  <option value="all">Toda la cartera</option>
-                  {statusOptions.map((option) => (
-                    <option value={option} key={option}>
-                      {option}
-                    </option>
-                  ))}
-                </select>
-              </label>
-
-              <label>
-                <span>Orden</span>
-                <select value={sort} onChange={(event) => setSort(event.target.value)}>
-                  <option value="bank">Orden del banco</option>
-                  <option value="id">ID del caso</option>
-                  <option value="title">Título A–Z</option>
-                </select>
-              </label>
-            </div>
-
-            <div className="filter-footer">
-              <p aria-live="polite">
-                <strong>{filtered.length}</strong>{" "}
-                {filtered.length === 1 ? "caso encontrado" : "casos encontrados"}
-              </p>
-              <button onClick={resetFilters} disabled={activeFilterCount === 0}>
-                Limpiar filtros {activeFilterCount > 0 && `(${activeFilterCount})`}
-              </button>
-            </div>
-          </div>
-
-          {filtered.length > 0 ? (
-            <>
-              <div className="case-grid">
-                {filtered.slice(0, visible).map((item) => {
-                  const selectedAreaMark =
-                    area === "all" ? "" : item.areas[area as AreaKey];
-                  return (
-                    <article className="case-card" key={item.id}>
-                      <div className="card-topline">
-                        <span className="case-id">{item.id}</span>
-                        <span className="card-block">{item.block}</span>
-                      </div>
-                      <div className="card-content">
-                        <p className="card-family">{item.family}</p>
-                        <h3>{item.title}</h3>
-                        <p className="card-description">{compact(item.description)}</p>
-                      </div>
-                      <div className="card-tags">
-                        <span>{item.coverage}</span>
-                        <span>{levelShort(item.level)}</span>
-                        {selectedAreaMark && (
-                          <span className="area-fit">
-                            {selectedAreaMark === "●" ? "Aplicación directa" : "Con adaptación"}
-                          </span>
-                        )}
-                      </div>
-                      <div className="card-footer">
-                        <div>
-                          <span>Capacidad principal</span>
-                          <strong>{item.primary}</strong>
-                        </div>
-                        <button
-                          onClick={() => setSelectedId(item.id)}
-                          aria-label={`Abrir ficha de ${item.title}`}
-                        >
-                          Ver ficha y flujo →
-                        </button>
-                      </div>
-                    </article>
-                  );
-                })}
-              </div>
-
-              {visible < filtered.length && (
-                <div className="load-more">
-                  <button onClick={() => setVisible((current) => current + PAGE_SIZE)}>
-                    Mostrar {Math.min(PAGE_SIZE, filtered.length - visible)} casos más
-                  </button>
-                  <span>
-                    Mostrando {Math.min(visible, filtered.length)} de {filtered.length}
-                  </span>
-                </div>
-              )}
-            </>
-          ) : (
-            <div className="empty-state">
-              <span>0</span>
-              <h3>No hay casos con esta combinación.</h3>
-              <p>Prueba a ampliar la cobertura o limpiar alguno de los filtros.</p>
-              <button onClick={resetFilters}>Limpiar todos los filtros</button>
-            </div>
-          )}
-        </section>
       </main>
 
       <footer className="site-footer">
         <div className="footer-brand">
           <img src="/brand/deloitte-logo.png" alt="Deloitte" />
-          <span aria-hidden="true"></span>
-          <img src="/brand/spiralia-logo.png" alt="Spiralia" />
+
         </div>
-        <p>Confidencial · Uso interno Deloitte · Banco auditado a 31/07/2026</p>
+        <p>Confidencial · Uso interno Deloitte · Catálogo actualizado a 08/09/2026</p>
         <a href="#inicio">Volver arriba ↑</a>
       </footer>
 
