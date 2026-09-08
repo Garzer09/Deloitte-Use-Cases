@@ -34,11 +34,17 @@ test("renders the searchable Copilot use-case bank", async () => {
     /<title>Banco de casos de uso · Microsoft 365 Copilot · Deloitte<\/title>/i,
   );
   assert.match(html, /Un banco de casos para/);
-  assert.match(html, />217</);
+  assert.match(html, />227</);
   assert.match(html, /TRV-01/);
   assert.match(html, /Explorar los casos/);
   assert.match(html, /Encuentra la opción adecuada/);
   assert.match(html, /Herramienta o capacidad/);
+  assert.match(html, /Nivel profesional/);
+  assert.match(html, /Staff/);
+  assert.match(html, /Managers/);
+  assert.match(html, /Directores \/ Socios/);
+  assert.match(html, /Agentes de SharePoint/);
+  assert.doesNotMatch(html, /<legend>Perfil<\/legend>|Administrativo y secretariado|Técnico o especialista/);
   assert.match(html, /Más filtros/);
   assert.match(html, /Relación con el troncal/);
   assert.match(html, /Nuevos primero/);
@@ -48,13 +54,13 @@ test("renders the searchable Copilot use-case bank", async () => {
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
 });
 
-test("keeps all 217 cases complete and uniquely identified", async () => {
+test("keeps all 227 cases complete and uniquely identified", async () => {
   const source = JSON.parse(
     await readFile(new URL("../data/cases.json", import.meta.url), "utf8"),
   );
-  assert.equal(source.total, 217);
-  assert.equal(source.cases.length, 217);
-  assert.equal(new Set(source.cases.map((item) => item.id)).size, 217);
+  assert.equal(source.total, 227);
+  assert.equal(source.cases.length, 227);
+  assert.equal(new Set(source.cases.map((item) => item.id)).size, 227);
 
   const required = [
     "id",

@@ -10,7 +10,8 @@ export type CaseItem = {
   tasks: string[]; tools: string[]; audiences: string[];
   corporateAreas: string[]; preparation: string[];
   coreRelation: string; coreLessons: string[]; coreRationale: string;
-  addedOn?: string; input?: string; steps?: string[]; examplePrompt?: string;
+  addedOn?: string; reviewedOn?: string; input?: string; steps?: string[]; examplePrompt?: string;
+  additionalSources?: { label: string; url: string }[];
   distinction?: string;
 };
 
@@ -30,13 +31,12 @@ export const taskOptions: Option[] = [
   { value: "govern", label: "Organizar conocimiento y controles" },
 ];
 export const toolOptions: Option[] = [
-  ...["Excel", "Word", "PowerPoint", "Outlook", "Teams", "Researcher", "Analyst", "SharePoint", "Copilot Chat", "Copilot Search", "Notebooks", "Pages", "Loop", "Agent Builder", "Copilot Studio", "Prompts programados", "Prompt Gallery", "People Skills", "Copilot Cowork", "Copilot móvil", "Brand kits", "Purview", "Work IQ"].map(label => ({ value: label, label })),
+  ...["Excel", "Word", "PowerPoint", "Outlook", "Teams", "Researcher", "Analyst", "SharePoint", "Agentes de SharePoint", "Copilot Chat", "Copilot Search", "Notebooks", "Pages", "Loop", "Agent Builder", "Copilot Studio", "Prompts programados", "Prompt Gallery", "People Skills", "Copilot Cowork", "Copilot móvil", "Brand kits", "Purview", "Work IQ"].map(label => ({ value: label, label })),
 ];
 export const audienceOptions: Option[] = [
-  { value: "admin", label: "Administrativo y secretariado" },
-  { value: "specialist", label: "Técnico o especialista" },
-  { value: "manager", label: "Responsable de equipo" },
-  { value: "leadership", label: "Dirección" },
+  { value: "staff", label: "Staff" },
+  { value: "manager", label: "Managers" },
+  { value: "leadership", label: "Directores / Socios" },
 ];
 export const corporateAreaOptions: Option[] = [
   { value: "common", label: "Común a todas las áreas corporativas" },

@@ -19,7 +19,7 @@ export const areaOptions = [
 const facets: { key: MultiFilter; label: string; options: Option[] }[] = [
   { key: "tasks", label: "Tarea", options: taskOptions },
   { key: "tools", label: "Herramienta o capacidad", options: toolOptions },
-  { key: "audiences", label: "Perfil", options: audienceOptions },
+  { key: "audiences", label: "Nivel profesional", options: audienceOptions },
   { key: "corporateAreas", label: "Subárea corporativa", options: corporateAreaOptions },
   { key: "preparation", label: "Preparación necesaria", options: preparationOptions },
 ];
@@ -91,10 +91,11 @@ export function CatalogueFilters({ items, filters, onChange, onReset, total }: {
         </label>
         {renderFacet("tasks")}{renderFacet("tools")}{renderFacet("audiences")}
       </div>
+      <p className="filter-help">Staff incluye personal administrativo y técnico hasta senior; Managers incluye managers y senior managers. Directores / Socios completa los niveles. Un caso puede ser útil en varios niveles; Corporativas se elige en Área Deloitte.</p>
       {filters.area === "Corp" && (
         <div className="corporate-filter">
           {renderFacet("corporateAreas")}
-          <p>Los casos comunes a todas las áreas también aparecen al elegir una subárea. Esta clasificación indica dónde se pueden aplicar; el perfil señala quién suele ejecutarlos.</p>
+          <p>Los casos comunes a todas las áreas también aparecen al elegir una subárea. El área indica dónde se aplica la práctica y el nivel profesional, a quién puede resultar útil.</p>
         </div>
       )}
       <p className="filter-help">Puedes elegir varias opciones: se suman dentro de cada filtro y se combinan con los demás. Los recuentos tienen en cuenta los otros filtros activos.</p>

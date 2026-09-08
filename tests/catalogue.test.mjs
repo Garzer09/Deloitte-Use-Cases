@@ -11,8 +11,8 @@ const cases = data.cases;
 const byId = id => cases.find(c => c.id === id);
 const ids = filters => filterCases(cases, { ...defaultFilters, ...filters }).map(c => c.id);
 
-test("retains the original 205 IDs and adds 12 complete common corporate practices", () => {
-  assert.equal(data.total, 217);
+test("retains the original 205 IDs and adds 22 complete common corporate practices", () => {
+  assert.equal(data.total, 227);
   assert.equal(cases.length, data.total);
   assert.equal(new Set(cases.map(c => c.id)).size, cases.length);
   assert.equal(new Set(cases.map(c => c.title)).size, cases.length);
@@ -20,20 +20,19 @@ test("retains the original 205 IDs and adds 12 complete common corporate practic
     for (let n = 1; n <= length; n++) assert.ok(byId(`${prefix}-${String(n).padStart(2, "0")}`));
   }
   const added = cases.filter(c => c.addedOn);
-  assert.equal(added.length, 12);
+  assert.equal(added.length, 22);
   for (const item of added) {
     assert.deepEqual(item.corporateAreas, ["common"], item.id);
     assert.equal(item.areas.Corp, "●");
-    assert.deepEqual(item.preparation, ["files"]);
-    assert.match(item.level, /^N1/);
+    assert.ok(item.preparation.includes("files"));
     assert.ok(item.input && item.examplePrompt && item.distinction && item.deliverable && item.humanReview);
     assert.ok(item.steps.length >= 3);
     assert.ok(item.coreLessons.length);
-    assert.match(item.microsoftSource, /^https:\/\/support\.microsoft\.com\//);
+    assert.match(item.microsoftSource, /^https:\/\/(support|learn)\.microsoft\.com\//);
   }
 });
 
-test("all 217 records use the controlled taxonomy, with justified core relationships", () => {
+test("all 227 records use the controlled taxonomy, with justified core relationships", () => {
   const schema = { tasks: taskOptions, tools: toolOptions, audiences: audienceOptions, corporateAreas: corporateAreaOptions, preparation: preparationOptions };
   for (const item of cases) {
     for (const [key, options] of Object.entries(schema)) {
@@ -57,12 +56,12 @@ test("corrects the misleading legacy families without mixing inbox and meetings"
   assert.ok(!byId("COR-14").tasks.includes("meet"));
 });
 
-test("combines area, task, tool and administrative profile", () => {
-  const result = ids({ area: "Corp", tasks: ["clean"], tools: ["Excel"], audiences: ["admin"] });
+test("combines area, task, tool and professional level", () => {
+  const result = ids({ area: "Corp", tasks: ["clean"], tools: ["Excel"], audiences: ["staff"] });
   assert.ok(result.includes("COR-41"));
   assert.ok(result.includes("COR-43"));
   assert.ok(!result.includes("COR-46"));
-  assert.ok(!result.includes("TAX-24"));
+  assert.ok(result.includes("TAX-24")); // Technical specialists now belong to Staff.
 });
 
 test("uses OR for tools and AND between tools and tasks", () => {
@@ -92,8 +91,8 @@ test("keeps corporate applicability distinct from bank of origin", () => {
   const applicable = ids({ area: "Corp" });
   assert.ok(applicable.includes("TRV-01"));
   assert.ok(applicable.includes("TAX-12"));
-  assert.equal(applicable.length, 113);
-  assert.equal(ids({ origin: "Áreas Corporativas" }).length, 52);
+  assert.equal(applicable.length, 123);
+  assert.equal(ids({ origin: "Áreas Corporativas" }).length, 62);
   const direct = ids({ area: "Corp", applicability: "direct" });
   const adapted = ids({ area: "Corp", applicability: "adapted" });
   assert.equal(direct.length + adapted.length, applicable.length);
@@ -108,12 +107,12 @@ test("area changes clear inapplicable facets and reset is complete", () => {
   const all = updateFilters(selected, "area", "all");
   assert.deepEqual(all.corporateAreas, []);
   assert.equal(all.applicability, "all");
-  assert.equal(filterCases(cases, defaultFilters).length, 217);
+  assert.equal(filterCases(cases, defaultFilters).length, 227);
 });
 
 test("search is insensitive to accents and matches separated words and taxonomy labels", () => {
   assert.ok(ids({ query: "exportacion plantilla" }).includes("COR-41"));
-  assert.ok(ids({ query: "administrativo relevo" }).includes("COR-47"));
+  assert.ok(ids({ query: "staff relevo" }).includes("COR-47"));
   assert.deepEqual(ids({ query: "cor-52" }), ["COR-52"]);
   assert.deepEqual(ids({ query: "exportación plantilla" }), ids({ query: "EXPORTACION plantilla" }));
 });
@@ -135,9 +134,34 @@ test("advanced filters combine with primary filters and handle zero matches", ()
   assert.ok(ids({ area: "Corp", maturity: "GA condicionado" }).includes("COR-41"));
 });
 
-test("newest order surfaces the twelve additions and filtering never mutates source", () => {
+test("newest order surfaces all additions and filtering never mutates source", () => {
   const before = cases.map(c => c.id);
   const sorted = filterCases(cases, { ...defaultFilters, sort: "newest" });
-  assert.ok(sorted.slice(0, 12).every(c => c.addedOn === "2026-09-08"));
+  assert.ok(sorted.slice(0, 22).every(c => c.addedOn === "2026-09-08"));
   assert.deepEqual(cases.map(c => c.id), before);
+});
+
+test("professional levels are exhaustive and independent of corporate area", () => {
+  assert.deepEqual(audienceOptions.map(o => o.value), ["staff", "manager", "leadership"]);
+  const levels = audienceOptions.flatMap(o => ids({ audiences: [o.value] }));
+  assert.equal(new Set(levels).size, cases.length);
+  for (const level of audienceOptions) {
+    const result = ids({ area: "Corp", audiences: [level.value], query: "COR-12" });
+    assert.ok(result.includes("COR-12"));
+  }
+  assert.ok(!ids({ area: "Corp", audiences: ["staff"] }).includes("COR-61"));
+  assert.ok(ids({ area: "Corp", audiences: ["manager"] }).includes("COR-61"));
+});
+
+test("SharePoint FAQ, cleanup and admin governance have distinct requirements", () => {
+  const faq = byId("COR-12");
+  assert.ok(faq.steps.length >= 4 && faq.examplePrompt && faq.reviewedOn);
+  assert.deepEqual(ids({ area: "Corp", tools: ["Agentes de SharePoint"] }), ["COR-12", "COR-57"]);
+  for (const id of ["COR-12", "COR-53", "COR-54", "COR-55", "COR-56", "COR-57"]) {
+    assert.ok(ids({ area: "Corp", corporateAreas: ["common"], tools: ["SharePoint"] }).includes(id), id);
+  }
+  assert.ok(!ids({ area: "Corp", corporateAreas: ["common"] }).includes("COR-40"));
+  assert.ok(byId("COR-40").preparation.includes("it"));
+  assert.ok(!byId("COR-53").preparation.includes("it"));
+  assert.match(byId("COR-53").conditions, /inventario se prepara manualmente/);
 });

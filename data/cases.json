@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-07-31",
-  "total": 217,
+  "total": 227,
   "cases": [
     {
       "id": "TRV-01",
@@ -42,8 +42,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -97,8 +96,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -152,8 +150,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -208,8 +205,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -263,7 +259,7 @@
         "common"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -316,8 +312,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -370,7 +365,7 @@
         "common"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -421,7 +416,7 @@
         "common"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -469,8 +464,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -522,8 +516,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -575,8 +568,7 @@
         "marketing"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -628,8 +620,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -681,8 +672,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -734,7 +724,7 @@
         "it"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -784,8 +774,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -840,8 +829,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -902,7 +890,7 @@
         "common"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -960,8 +948,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -1018,8 +1005,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -1072,8 +1058,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -1127,8 +1112,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -1184,8 +1168,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -1237,8 +1220,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -1292,8 +1274,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -1347,8 +1328,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -1399,7 +1379,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -1447,7 +1427,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -1495,7 +1475,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -1542,8 +1522,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -1594,8 +1573,7 @@
         "it"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -1647,8 +1625,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -1702,7 +1679,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -1753,7 +1730,7 @@
         "common"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -1801,7 +1778,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -1850,7 +1827,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -1897,7 +1874,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -1946,7 +1923,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -1995,7 +1972,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -2042,7 +2019,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -2091,7 +2068,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -2141,7 +2118,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -2188,7 +2165,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -2238,7 +2215,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -2290,7 +2267,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -2340,7 +2317,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -2389,7 +2366,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -2440,7 +2417,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -2491,7 +2468,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -2543,7 +2520,7 @@
         "finance"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -2593,7 +2570,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -2643,7 +2620,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -2694,8 +2671,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -2748,7 +2724,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -2802,7 +2778,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -2856,7 +2832,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files",
@@ -2906,8 +2882,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -2955,7 +2930,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -3002,7 +2977,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -3050,7 +3025,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -3097,7 +3072,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -3144,7 +3119,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -3195,8 +3170,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -3250,7 +3224,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -3299,7 +3273,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -3349,7 +3323,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -3396,7 +3370,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -3447,7 +3421,7 @@
         "risk"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -3495,7 +3469,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -3544,7 +3518,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -3596,7 +3570,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -3648,7 +3622,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -3699,7 +3673,7 @@
         "risk"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -3748,7 +3722,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -3799,7 +3773,7 @@
         "growth"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -3847,7 +3821,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -3898,7 +3872,7 @@
         "finance"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -3950,7 +3924,7 @@
         "finance"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -4000,7 +3974,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -4051,7 +4025,7 @@
         "finance"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files",
@@ -4103,7 +4077,7 @@
         "procurement"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files",
@@ -4155,7 +4129,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -4208,7 +4182,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "content",
@@ -4263,7 +4237,7 @@
         "it"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files",
@@ -4317,7 +4291,7 @@
         "risk"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -4371,7 +4345,7 @@
         "finance"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -4421,7 +4395,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -4472,7 +4446,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -4525,7 +4499,7 @@
         "risk"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -4580,7 +4554,7 @@
         "risk"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -4633,7 +4607,7 @@
         "risk"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -4685,7 +4659,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -4732,7 +4706,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -4780,7 +4754,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -4827,7 +4801,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -4875,7 +4849,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -4924,7 +4898,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -4974,8 +4948,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -5026,7 +4999,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -5075,7 +5048,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -5122,7 +5095,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -5170,7 +5143,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -5218,7 +5191,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -5266,7 +5239,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -5315,7 +5288,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -5365,7 +5338,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -5413,7 +5386,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -5464,7 +5437,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -5514,7 +5487,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "content",
@@ -5565,7 +5538,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files",
@@ -5614,7 +5587,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -5662,7 +5635,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -5710,7 +5683,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -5759,7 +5732,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -5810,7 +5783,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -5862,7 +5835,7 @@
         "finance"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -5915,7 +5888,7 @@
         "growth"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -5967,7 +5940,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -6019,7 +5992,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -6073,7 +6046,7 @@
         "marketing"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -6125,7 +6098,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -6177,7 +6150,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "content"
@@ -6227,7 +6200,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -6281,7 +6254,7 @@
         "risk"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files",
@@ -6335,7 +6308,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "content",
@@ -6391,7 +6364,7 @@
         "risk"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "content",
@@ -6441,7 +6414,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -6489,8 +6462,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -6539,7 +6511,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -6586,7 +6558,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -6633,7 +6605,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -6682,8 +6654,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -6734,7 +6705,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -6784,7 +6755,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -6833,7 +6804,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -6880,7 +6851,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -6927,7 +6898,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -6977,7 +6948,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -7029,7 +7000,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "content",
@@ -7080,7 +7051,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -7131,7 +7102,7 @@
         "services"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -7181,7 +7152,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -7230,7 +7201,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -7278,7 +7249,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -7328,7 +7299,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -7380,7 +7351,7 @@
         "it"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "content",
@@ -7432,7 +7403,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -7487,7 +7458,7 @@
         "finance"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -7539,7 +7510,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -7592,7 +7563,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files",
@@ -7645,7 +7616,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -7700,7 +7671,7 @@
         "it"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -7755,7 +7726,7 @@
         "risk"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -7811,7 +7782,7 @@
         "risk"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files",
@@ -7862,7 +7833,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -7916,7 +7887,7 @@
         "services"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -7970,7 +7941,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files",
@@ -8023,7 +7994,7 @@
       ],
       "corporateAreas": [],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -8076,7 +8047,7 @@
         "it"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -8132,7 +8103,7 @@
         "procurement"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -8187,7 +8158,7 @@
         "finance"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files",
@@ -8243,7 +8214,7 @@
         "it"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -8300,7 +8271,7 @@
         "culture"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "content",
@@ -8355,7 +8326,7 @@
         "marketing"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -8409,7 +8380,7 @@
         "marketing"
       ],
       "audiences": [
-        "specialist"
+        "staff"
       ],
       "preparation": [
         "files"
@@ -8462,7 +8433,7 @@
         "it"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -8514,8 +8485,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -8567,8 +8537,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -8619,7 +8588,7 @@
         "finance"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -8671,7 +8640,7 @@
         "culture"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -8725,8 +8694,7 @@
         "risk"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -8778,8 +8746,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -8830,8 +8797,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -8887,8 +8853,7 @@
         "it"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -8942,8 +8907,7 @@
         "procurement"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -8994,7 +8958,7 @@
         "finance"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -9044,8 +9008,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -9061,10 +9024,10 @@
     {
       "id": "COR-12",
       "block": "Áreas Corporativas",
-      "title": "Las políticas internas, consultables",
-      "description": "Políticas y procedimientos internos consultables con respuesta referenciada. Resuelve: las políticas existen pero encontrar la respuesta exacta lleva tiempo o una consulta a un compañero.",
-      "primary": "Agentes de SharePoint / Copilot sobre contenido",
-      "involved": "Agentes de SharePoint / Copilot sobre contenido",
+      "title": "Un agente de SharePoint para las dudas frecuentes del equipo",
+      "description": "Crea un agente que ayude a cualquier área corporativa a resolver dudas sobre sus procedimientos, plantillas y formas de trabajar. Selecciona conocimiento vigente, define el alcance y prueba respuestas con referencias antes de compartirlo.",
+      "primary": "Agentes de SharePoint",
+      "involved": "Agentes de SharePoint; fuentes documentales del equipo",
       "areas": {
         "A&A": null,
         "T&L": null,
@@ -9072,33 +9035,32 @@
         "T&T": null,
         "Corp": "●"
       },
-      "profiles": "Todas las áreas corporativas y, en última instancia, toda la Firma",
+      "profiles": "Personas que mantienen procedimientos o conocimiento y profesionales de cualquier nivel que los consultan, en todas las áreas corporativas.",
       "status": "En el inventario del área, a elección",
       "coverage": "Todos los perfiles",
       "route": "Núcleo común",
       "family": "Agentes y automatización",
-      "deliverable": "Acta, decisiones y acciones",
-      "maturity": "GA · sujeto a licencia Microsoft 365 Copilot y canal",
+      "deliverable": "Agente de preguntas frecuentes con fuentes seleccionadas, instrucciones y pruebas documentadas.",
+      "maturity": "GA condicionado · licencia y permisos de edición para crear el agente",
       "level": "N2 · Configuración",
-      "conditions": "Licencia Microsoft 365 Copilot; datos accesibles y bien gobernados; configuración/curación por el área e IT; permisos y contenido vigente",
-      "humanReview": "Obligatoria · el propietario revisa exactitud, permisos y adecuación antes de compartir",
-      "auditFinding": "Viable como flujo asistido; presentar siempre la salida como borrador revisable, no como conclusión automática.",
-      "microsoftSource": "https://learn.microsoft.com/en-us/sharepoint/manage-access-agents-in-sharepoint",
-      "deloitteSource": "https://www.deloitte.com/es/es/about/people/equipo-directivo.html",
+      "conditions": "El creador necesita una licencia de Microsoft Copilot y permisos de edición en el sitio. Las respuestas respetan el acceso del usuario a las fuentes; compartir el agente no concede acceso a los documentos. La práctica resuelve consultas, sin tramitar solicitudes en sistemas externos.",
+      "humanReview": "Validar respuestas, citas y casos sin evidencia. Probar con usuarios de diferentes accesos y mantener fuentes y contacto de referencia actualizados.",
+      "auditFinding": "Caso desarrollado y contrastado con documentación oficial el 08/09/2026. No equivale a un agente con acciones ni exige la nueva experiencia general de Copilot en SharePoint en preview.",
+      "microsoftSource": "https://support.microsoft.com/en-us/sharepoint/copilot-in-sharepoint/create-an-agent-in-sharepoint",
+      "deloitteSource": "",
       "tasks": [
         "agent",
         "find"
       ],
       "tools": [
-        "SharePoint",
-        "Copilot Chat"
+        "Agentes de SharePoint",
+        "SharePoint"
       ],
       "corporateAreas": [
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -9111,7 +9073,27 @@
         "Contexto y fuentes"
       ],
       "coreRelation": "complementary",
-      "coreRationale": "Aplica los fundamentos de Agent Builder, Contexto y fuentes a un encargo concreto: Las políticas internas, consultables. La clasificación se refiere a la práctica, no a que la herramienta sea nueva."
+      "coreRationale": "Aplica los fundamentos de agentes del troncal a la creación nativa en SharePoint. Frente a COR-08 y COR-20, cubre conocimiento cotidiano de cualquier área, sin limitarse a onboarding ni integrar un helpdesk.",
+      "input": "Sitio de SharePoint del equipo, documentos vigentes con propietario, diez dudas frecuentes y respuestas de referencia revisadas.",
+      "steps": [
+        "Seleccionar fuentes vigentes y resolver contradicciones; definir los temas cubiertos y el contacto para las dudas sin respuesta.",
+        "Crear el agente desde Nuevo > Agente en el sitio o desde los archivos seleccionados; ajustar su propósito, fuentes y comportamiento.",
+        "Indicar que responda con referencias y reconozca falta de evidencia. Probar preguntas habituales, ambiguas y fuera de alcance.",
+        "Compartir el enlace al archivo .agent con los destinatarios previstos y comprobar su acceso a las fuentes. Designar una persona para mantener el contenido."
+      ],
+      "examplePrompt": "Ayuda al equipo a resolver dudas sobre los procedimientos incluidos en tus fuentes. Da una respuesta breve con referencias comprobables. Si hay contradicciones o falta información, indícalo y remite al contacto definido por el equipo. No inventes requisitos ni des por tramitada ninguna solicitud.",
+      "distinction": "Agente nativo de SharePoint con fuentes del equipo y preguntas frecuentes; construcción distinta de Agent Builder y de un flujo con Copilot Studio.",
+      "reviewedOn": "2026-09-08",
+      "additionalSources": [
+        {
+          "label": "Gestión y acceso al agente",
+          "url": "https://support.microsoft.com/en-us/sharepoint/copilot-in-sharepoint/manage-agents-in-sharepoint"
+        },
+        {
+          "label": "Permisos de las fuentes",
+          "url": "https://learn.microsoft.com/en-us/sharepoint/manage-access-agents-in-sharepoint"
+        }
+      ]
     },
     {
       "id": "COR-13",
@@ -9150,7 +9132,7 @@
         "talent"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -9200,7 +9182,7 @@
         "talent"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -9251,7 +9233,7 @@
         "culture"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -9301,7 +9283,7 @@
         "learning"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -9353,8 +9335,7 @@
         "finance"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -9405,7 +9386,7 @@
         "marketing"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -9460,8 +9441,7 @@
         "services"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -9519,7 +9499,7 @@
         "services"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -9573,7 +9553,7 @@
         "growth"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -9628,7 +9608,7 @@
         "services"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -9684,7 +9664,7 @@
         "services"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -9736,8 +9716,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -9790,7 +9769,7 @@
         "common"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -9899,7 +9878,7 @@
         "finance"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -9955,7 +9934,7 @@
         "culture"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -10010,7 +9989,7 @@
         "growth"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -10067,7 +10046,7 @@
         "growth"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -10122,7 +10101,7 @@
         "finance"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -10177,7 +10156,7 @@
         "it"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -10231,8 +10210,7 @@
         "services"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -10287,7 +10265,7 @@
         "common"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -10343,8 +10321,7 @@
         "common"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -10401,8 +10378,7 @@
         "procurement"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -10457,7 +10433,7 @@
         "it"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -10512,7 +10488,7 @@
         "risk"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -10570,7 +10546,7 @@
         "procurement"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
@@ -10606,10 +10582,10 @@
       "deliverable": "Checklist o informe de excepciones",
       "maturity": "GA condicionado · SharePoint Advanced Management y rol admin",
       "level": "N2 · Configuración",
-      "conditions": "Licencia Microsoft 365 Copilot; datos accesibles y bien gobernados; configuración/curación por el área e IT; permisos y contenido vigente",
+      "conditions": "Caso de administración de SharePoint a escala de organización. Requiere roles administrativos y los requisitos de licencia y configuración de SharePoint Admin Agent y SharePoint Advanced Management; no basta con ser miembro de un sitio. Validar conservación y acciones de archivo con los responsables de gobierno.",
       "humanReview": "Obligatoria · experto responsable valida fuentes, cálculos, juicio y conclusión antes de usar o comunicar",
-      "auditFinding": "Viable como flujo asistido; presentar siempre la salida como borrador revisable, no como conclusión automática.",
-      "microsoftSource": "https://learn.microsoft.com/en-us/microsoft-agent-365/overview",
+      "auditFinding": "Se corrige la fuente oficial y se explicitan los requisitos administrativos. Para limpieza y orden por parte de cualquier equipo corporativo, consultar COR-53 y COR-54.",
+      "microsoftSource": "https://learn.microsoft.com/en-us/sharepoint/content-governance-agent",
       "deloitteSource": "https://www.deloitte.com/es/es/about/people/equipo-directivo.html",
       "tasks": [
         "govern",
@@ -10625,19 +10601,21 @@
         "risk"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager"
       ],
       "preparation": [
         "content",
-        "agent"
+        "agent",
+        "it"
       ],
       "coreLessons": [
         "Agent Builder",
         "Work IQ"
       ],
       "coreRelation": "outside",
-      "coreRationale": "El resultado requiere capacidades o configuración que no constituyen una práctica directa de las guías transversales revisadas. El troncal aporta fundamentos en Agent Builder, Work IQ. Revisar las condiciones del caso antes de incorporarlo al itinerario."
+      "coreRationale": "El resultado requiere capacidades o configuración que no constituyen una práctica directa de las guías transversales revisadas. El troncal aporta fundamentos en Agent Builder, Work IQ. Revisar las condiciones del caso antes de incorporarlo al itinerario.",
+      "reviewedOn": "2026-09-08"
     },
     {
       "id": "COR-41",
@@ -10674,8 +10652,7 @@
         "Excel"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "corporateAreas": [
@@ -10734,8 +10711,7 @@
         "Excel"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "corporateAreas": [
@@ -10796,8 +10772,7 @@
         "Excel"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "corporateAreas": [
@@ -10859,8 +10834,7 @@
         "Excel"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "corporateAreas": [
@@ -10923,8 +10897,7 @@
         "Outlook"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "corporateAreas": [
@@ -10984,8 +10957,7 @@
         "Word"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -11046,8 +11018,7 @@
         "Excel"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "corporateAreas": [
@@ -11109,8 +11080,7 @@
         "PowerPoint"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -11173,8 +11143,7 @@
         "Copilot Chat"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -11237,8 +11206,7 @@
         "Outlook"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager"
       ],
       "corporateAreas": [
@@ -11299,7 +11267,7 @@
         "Excel"
       ],
       "audiences": [
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -11360,8 +11328,7 @@
         "Copilot Chat"
       ],
       "audiences": [
-        "admin",
-        "specialist",
+        "staff",
         "manager",
         "leadership"
       ],
@@ -11385,6 +11352,661 @@
       ],
       "examplePrompt": "Contrasta estos documentos con el glosario. Indica documento, fragmento, regla y corrección sugerida. No cambies cifras, citas ni expresiones protegidas. Si una palabra admite varios sentidos, marca REVISAR y explica el contexto.",
       "distinction": "Complementa la revisión de Word y TRV-21 con consistencia terminológica entre documentos, en lugar de comparar dos versiones del mismo archivo."
+    },
+    {
+      "id": "COR-53",
+      "block": "Áreas Corporativas",
+      "title": "SharePoint limpio: qué conservar, actualizar o archivar",
+      "description": "Revisa una biblioteca del equipo para localizar posibles duplicados, versiones que generan dudas, documentos sin propietario y contenido pendiente de revisión. Convierte el inventario en un plan de limpieza que cualquier área puede ejecutar con sus responsables de contenido.",
+      "primary": "Copilot en Excel + Copilot Chat + SharePoint",
+      "involved": "Excel; Copilot Chat; SharePoint",
+      "areas": {
+        "A&A": "●",
+        "T&L": "●",
+        "SRT": "●",
+        "T&T": "●",
+        "Corp": "●"
+      },
+      "profiles": "Aplicable a cualquier área corporativa; personas que mantienen documentos, registros o procesos del equipo.",
+      "audiences": [
+        "staff",
+        "manager"
+      ],
+      "status": "Banco extendido, no incluido aún",
+      "coverage": "Mayoría del negocio",
+      "route": "Núcleo común",
+      "family": "Conocimiento, gobierno y controles",
+      "deliverable": "Plan de limpieza con evidencia, decisión del propietario y registro de acciones ejecutadas.",
+      "maturity": "GA condicionado · comprobar licencia y disponibilidad en el entorno",
+      "level": "N1 · Nativo",
+      "conditions": "Licencia y funciones habilitadas por la organización. La práctica utiliza fuentes accesibles y una muestra acotada. La persona revisa las propuestas y ejecuta los cambios en los archivos o sistemas. El inventario se prepara manualmente o con un mecanismo disponible y autorizado. No se presupone exportación CSV nativa de bibliotecas ni búsqueda exhaustiva. Los movimientos y cambios los hace una persona con permisos; no depende de la nueva experiencia de Copilot en SharePoint en preview.",
+      "humanReview": "Confirmar duplicados por contenido y vigencia; comprobar conservación, referencias y permisos antes de archivar o eliminar. Copilot propone y la persona decide.",
+      "auditFinding": "Propuesta de práctica común a todas las áreas corporativas, contrastada con funciones documentadas por Microsoft. La ficha define un ejercicio supervisado; no acredita una implantación ni un ahorro medido en Deloitte.",
+      "microsoftSource": "https://support.microsoft.com/en-us/office/agent-mode-in-excel-frontier-a2fd6fe4-97ac-416b-b89a-22f4d1357c7a",
+      "deloitteSource": "",
+      "tasks": [
+        "govern",
+        "analyse",
+        "review"
+      ],
+      "tools": [
+        "Excel",
+        "Copilot Chat",
+        "SharePoint"
+      ],
+      "corporateAreas": [
+        "common"
+      ],
+      "preparation": [
+        "files",
+        "content"
+      ],
+      "coreRelation": "complementary",
+      "coreLessons": [
+        "Excel",
+        "Contexto y fuentes"
+      ],
+      "coreRationale": "A diferencia de COR-40, trabaja sobre una biblioteca concreta y un inventario aportado, sin requerir administración global ni SharePoint Advanced Management. Aplica Excel a una decisión de mantenimiento documental.",
+      "distinction": "A diferencia de COR-40, trabaja sobre una biblioteca concreta y un inventario aportado, sin requerir administración global ni SharePoint Advanced Management. Aplica Excel a una decisión de mantenimiento documental.",
+      "addedOn": "2026-09-08",
+      "input": "Inventario preparado de 20–30 documentos con ID, enlace, nombre, ubicación, propietario y fecha de modificación; muestra de contenidos y reglas de conservación del equipo.",
+      "steps": [
+        "Preparar el inventario desde la biblioteca y fijar su alcance. Registrar qué carpetas y archivos se han revisado; no asumir que Copilot enumera todo el sitio.",
+        "Pedir a Copilot una tabla de incidencias y acciones propuestas: conservar, revisar contenido, consolidar o proponer archivo. Un nombre parecido solo indica un posible duplicado.",
+        "Abrir los documentos candidatos y confirmar con sus propietarios cuál sigue vigente. Una fecha antigua por sí sola no prueba obsolescencia.",
+        "Ejecutar las acciones aceptadas desde SharePoint, por lotes pequeños, y registrar antes y después. Comprobar enlaces, versiones y metadatos al mover contenido."
+      ],
+      "examplePrompt": "Analiza este inventario de SharePoint y la muestra aportada. Devuelve ID, incidencia, evidencia, acción propuesta y validación pendiente. No declares dos archivos idénticos solo por su nombre ni obsoleto uno por su fecha. No elimines ni muevas nada.",
+      "additionalSources": [
+        {
+          "label": "Mover o copiar archivos",
+          "url": "https://support.microsoft.com/en-us/sharepoint/libraries/move-or-copy-files-in-sharepoint"
+        },
+        {
+          "label": "Propiedades de la biblioteca",
+          "url": "https://support.microsoft.com/en-us/sharepoint/libraries/view-and-edit-information-about-a-file-folder-or-link-in-a-document-library"
+        }
+      ]
+    },
+    {
+      "id": "COR-54",
+      "block": "Áreas Corporativas",
+      "title": "SharePoint ordenado: nombres, metadatos y vistas útiles",
+      "description": "Diseña una estructura de información que permita encontrar los documentos por tipo, proceso, estado o vigencia. Lleva una muestra a un esquema común y comprueba que las personas del equipo pueden localizar lo que necesitan.",
+      "primary": "Copilot Chat + Copilot en Excel + SharePoint",
+      "involved": "Copilot Chat; Excel; SharePoint",
+      "areas": {
+        "A&A": "●",
+        "T&L": "●",
+        "SRT": "●",
+        "T&T": "●",
+        "Corp": "●"
+      },
+      "profiles": "Aplicable a cualquier área corporativa; personas que mantienen documentos, registros o procesos del equipo.",
+      "audiences": [
+        "staff",
+        "manager"
+      ],
+      "status": "Banco extendido, no incluido aún",
+      "coverage": "Mayoría del negocio",
+      "route": "Núcleo común",
+      "family": "Conocimiento, gobierno y controles",
+      "deliverable": "Esquema de organización, tabla de correspondencias, vistas configuradas y guía de archivo del equipo.",
+      "maturity": "GA condicionado · comprobar licencia y disponibilidad en el entorno",
+      "level": "N1 · Nativo",
+      "conditions": "Licencia y funciones habilitadas por la organización. La práctica utiliza fuentes accesibles y una muestra acotada. La persona revisa las propuestas y ejecuta los cambios en los archivos o sistemas. Copilot ayuda a diseñar y clasificar; una persona con permisos configura la biblioteca y valida los cambios. No presupone creación automática de columnas o vistas con funciones en preview.",
+      "humanReview": "Verificar que las categorías se entienden, que no ocultan excepciones y que los cambios conservan referencias y metadatos necesarios.",
+      "auditFinding": "Propuesta de práctica común a todas las áreas corporativas, contrastada con funciones documentadas por Microsoft. La ficha define un ejercicio supervisado; no acredita una implantación ni un ahorro medido en Deloitte.",
+      "microsoftSource": "https://support.microsoft.com/en-US/SharePoint/libraries/create-a-custom-view-of-a-document-library",
+      "deloitteSource": "",
+      "tasks": [
+        "govern",
+        "plan"
+      ],
+      "tools": [
+        "Copilot Chat",
+        "Excel",
+        "SharePoint"
+      ],
+      "corporateAreas": [
+        "common"
+      ],
+      "preparation": [
+        "files",
+        "content"
+      ],
+      "coreRelation": "complementary",
+      "coreLessons": [
+        "Contexto y fuentes",
+        "Ejemplos y prompts"
+      ],
+      "coreRationale": "COR-53 decide qué contenido conservar o revisar; esta práctica define cómo organizar y encontrar el contenido vigente. Amplía contexto y fuentes con diseño y prueba de una biblioteca.",
+      "distinction": "COR-53 decide qué contenido conservar o revisar; esta práctica define cómo organizar y encontrar el contenido vigente. Amplía contexto y fuentes con diseño y prueba de una biblioteca.",
+      "addedOn": "2026-09-08",
+      "input": "Inventario de una biblioteca, ejemplos de documentos y cinco búsquedas habituales del equipo.",
+      "steps": [
+        "Aportar el inventario y las necesidades de búsqueda. Pedir una propuesta de nombres, columnas, valores admitidos y vistas con pocos criterios claros.",
+        "Probar la clasificación sobre una muestra y preparar una correspondencia entre ubicación y nombre actuales y los propuestos. Marcar casos que no encajan.",
+        "Validar el esquema con el propietario y crear manualmente columnas y vistas en SharePoint. Renombrar o mover solo donde aporte valor.",
+        "Repetir las búsquedas de prueba y entregar una guía breve para incorporar nuevos documentos."
+      ],
+      "examplePrompt": "Con este inventario y estas cinco búsquedas, propón un esquema sencillo de nombres, columnas y vistas. Clasifica la muestra con evidencia y marca los casos ambiguos. Explica cómo encontrar cada documento; evita carpetas redundantes y no apliques cambios.",
+      "additionalSources": [
+        {
+          "label": "Propiedades de los archivos",
+          "url": "https://support.microsoft.com/en-us/sharepoint/libraries/view-and-edit-information-about-a-file-folder-or-link-in-a-document-library"
+        },
+        {
+          "label": "Mover o copiar archivos",
+          "url": "https://support.microsoft.com/en-us/sharepoint/libraries/move-or-copy-files-in-sharepoint"
+        }
+      ]
+    },
+    {
+      "id": "COR-55",
+      "block": "Áreas Corporativas",
+      "title": "Los documentos vigentes tienen próxima revisión",
+      "description": "Construye un calendario de revisión de procedimientos, guías y plantillas para que el mantenimiento del conocimiento tenga responsable y fecha. Hace visibles documentos sin dueño, plazos vencidos y reglas de revisión ausentes.",
+      "primary": "Copilot en Excel + SharePoint",
+      "involved": "Excel; SharePoint",
+      "areas": {
+        "A&A": "●",
+        "T&L": "●",
+        "SRT": "●",
+        "T&T": "●",
+        "Corp": "●"
+      },
+      "profiles": "Aplicable a cualquier área corporativa; personas que mantienen documentos, registros o procesos del equipo.",
+      "audiences": [
+        "staff",
+        "manager"
+      ],
+      "status": "Banco extendido, no incluido aún",
+      "coverage": "Mayoría del negocio",
+      "route": "Núcleo común",
+      "family": "Conocimiento, gobierno y controles",
+      "deliverable": "Calendario de revisión documental con responsables, vencimientos y excepciones justificadas.",
+      "maturity": "GA condicionado · comprobar licencia y disponibilidad en el entorno",
+      "level": "N1 · Nativo",
+      "conditions": "Licencia y funciones habilitadas por la organización. La práctica utiliza fuentes accesibles y una muestra acotada. La persona revisa las propuestas y ejecuta los cambios en los archivos o sistemas. Se trabaja con el registro aportado; actualizarlo y enviar recordatorios son pasos manuales de este ejercicio.",
+      "humanReview": "Comprobar las fórmulas y las reglas del calendario; una modificación técnica del archivo no certifica la vigencia de su contenido.",
+      "auditFinding": "Propuesta de práctica común a todas las áreas corporativas, contrastada con funciones documentadas por Microsoft. La ficha define un ejercicio supervisado; no acredita una implantación ni un ahorro medido en Deloitte.",
+      "microsoftSource": "https://support.microsoft.com/en-us/office/agent-mode-in-excel-frontier-a2fd6fe4-97ac-416b-b89a-22f4d1357c7a",
+      "deloitteSource": "",
+      "tasks": [
+        "govern",
+        "plan"
+      ],
+      "tools": [
+        "Excel",
+        "SharePoint"
+      ],
+      "corporateAreas": [
+        "common"
+      ],
+      "preparation": [
+        "files",
+        "content"
+      ],
+      "coreRelation": "complementary",
+      "coreLessons": [
+        "Excel"
+      ],
+      "coreRationale": "Añade mantenimiento periódico tras COR-53 y COR-54. Su resultado es un calendario de revisión del conocimiento, no una limpieza puntual ni una vigilancia automática del tenant.",
+      "distinction": "Añade mantenimiento periódico tras COR-53 y COR-54. Su resultado es un calendario de revisión del conocimiento, no una limpieza puntual ni una vigilancia automática del tenant.",
+      "addedOn": "2026-09-08",
+      "input": "Registro de documentos con propietario, última revisión validada y frecuencia acordada; fecha de corte y reglas para excepciones.",
+      "steps": [
+        "Distinguir fecha de modificación del archivo y fecha de revisión del contenido. Marcar datos que faltan sin sustituirlos.",
+        "Calcular la próxima revisión con las reglas acordadas y agrupar vencidos, próximos y pendientes de criterio.",
+        "Preparar una agenda por propietario, validar las fechas y mantener el registro tras cada revisión."
+      ],
+      "examplePrompt": "Calcula la próxima revisión usando solo la fecha de revisión validada y la frecuencia acordada. Si falta una, marca PENDIENTE. Separa vencidos, próximos 30 días y sin criterio, y conserva la referencia a cada documento."
+    },
+    {
+      "id": "COR-56",
+      "block": "Áreas Corporativas",
+      "title": "Las dudas repetidas mejoran la base de conocimiento",
+      "description": "Cruza consultas reales con la documentación vigente para detectar respuestas difíciles de encontrar, contradicciones y temas sin cubrir. Prioriza qué debe actualizar el equipo antes de ampliar su agente de preguntas frecuentes.",
+      "primary": "Copilot Chat + Copilot en Word + Copilot en Excel + SharePoint",
+      "involved": "Copilot Chat; Word; Excel; SharePoint",
+      "areas": {
+        "A&A": "●",
+        "T&L": "●",
+        "SRT": "●",
+        "T&T": "●",
+        "Corp": "●"
+      },
+      "profiles": "Aplicable a cualquier área corporativa; personas que mantienen documentos, registros o procesos del equipo.",
+      "audiences": [
+        "staff",
+        "manager"
+      ],
+      "status": "Banco extendido, no incluido aún",
+      "coverage": "Mayoría del negocio",
+      "route": "Núcleo común",
+      "family": "Conocimiento, gobierno y controles",
+      "deliverable": "Lista priorizada de vacíos de conocimiento y borradores de mejora enlazados a consultas reales.",
+      "maturity": "GA condicionado · comprobar licencia y disponibilidad en el entorno",
+      "level": "N1 · Nativo",
+      "conditions": "Licencia y funciones habilitadas por la organización. La práctica utiliza fuentes accesibles y una muestra acotada. La persona revisa las propuestas y ejecuta los cambios en los archivos o sistemas. La muestra de consultas se aporta manualmente; no se asume acceso a conversaciones privadas ni un panel de analítica del agente.",
+      "humanReview": "Validar las respuestas con el propietario de la fuente. No convertir respuestas informales o frecuentes en una política aprobada.",
+      "auditFinding": "Propuesta de práctica común a todas las áreas corporativas, contrastada con funciones documentadas por Microsoft. La ficha define un ejercicio supervisado; no acredita una implantación ni un ahorro medido en Deloitte.",
+      "microsoftSource": "https://support.microsoft.com/en-gb/copilot-word",
+      "deloitteSource": "",
+      "tasks": [
+        "govern",
+        "analyse",
+        "draft"
+      ],
+      "tools": [
+        "Copilot Chat",
+        "Word",
+        "Excel",
+        "SharePoint"
+      ],
+      "corporateAreas": [
+        "common"
+      ],
+      "preparation": [
+        "files",
+        "content"
+      ],
+      "coreRelation": "workflow",
+      "coreLessons": [
+        "Word",
+        "Contexto y fuentes"
+      ],
+      "coreRationale": "COR-49 clasifica comentarios; esta práctica compara dudas con conocimiento aprobado y produce cambios concretos en las fuentes de COR-12. No depende de analítica automática del agente.",
+      "distinction": "COR-49 clasifica comentarios; esta práctica compara dudas con conocimiento aprobado y produce cambios concretos en las fuentes de COR-12. No depende de analítica automática del agente.",
+      "addedOn": "2026-09-08",
+      "input": "Muestra autorizada y anonimizada de consultas con ID, base de conocimiento vigente y registro de respuestas revisadas.",
+      "steps": [
+        "Agrupar consultas equivalentes y contar preguntas únicas sin perder su referencia.",
+        "Comparar cada grupo con los documentos: respuesta suficiente, difícil de localizar, contradictoria o no localizada.",
+        "Preparar una cola de mejoras con evidencia y borradores para revisión. Actualizar las fuentes aprobadas y volver a probar las preguntas afectadas."
+      ],
+      "examplePrompt": "Agrupa estas consultas y contrástalas con la documentación aportada. Devuelve tema, IDs, frecuencia, evidencia disponible y mejora propuesta. Si no hay respuesta respaldada, indica NO LOCALIZADA y formula la pregunta al propietario."
+    },
+    {
+      "id": "COR-57",
+      "block": "Áreas Corporativas",
+      "title": "El agente de SharePoint pasa una prueba de respuestas",
+      "description": "Comprueba que el agente del equipo responde correctamente, aporta fuentes útiles y reconoce lo que no puede resolver. Incluye preguntas ambiguas, documentación contradictoria y usuarios con distintos accesos antes de extender su uso.",
+      "primary": "Agentes de SharePoint + SharePoint + Copilot en Excel",
+      "involved": "Agentes de SharePoint; SharePoint; Excel",
+      "areas": {
+        "A&A": "●",
+        "T&L": "●",
+        "SRT": "●",
+        "T&T": "●",
+        "Corp": "●"
+      },
+      "profiles": "Aplicable a cualquier área corporativa; personas que mantienen documentos, registros o procesos del equipo.",
+      "audiences": [
+        "staff",
+        "manager"
+      ],
+      "status": "Banco extendido, no incluido aún",
+      "coverage": "Mayoría del negocio",
+      "route": "Núcleo común",
+      "family": "Agentes y automatización",
+      "deliverable": "Banco de pruebas con evidencias, incidencias y decisión documentada sobre el uso del agente.",
+      "maturity": "GA condicionado · comprobar licencia y disponibilidad en el entorno",
+      "level": "N2 · Configuración",
+      "conditions": "Licencia y funciones habilitadas por la organización. La práctica utiliza fuentes accesibles y una muestra acotada. La persona revisa las propuestas y ejecuta los cambios en los archivos o sistemas. Requiere acceso al agente y a un entorno de prueba autorizado. El creador necesita licencia y permisos de edición. Las restricciones de acceso se prueban sin ampliar permisos reales para hacer pasar el ejercicio.",
+      "humanReview": "Abrir las citas y comprobar permisos efectivos. Una instrucción de comportamiento no sustituye los controles de acceso y una prueba satisfactoria no garantiza todas las respuestas futuras.",
+      "auditFinding": "Propuesta de práctica común a todas las áreas corporativas, contrastada con funciones documentadas por Microsoft. La ficha define un ejercicio supervisado; no acredita una implantación ni un ahorro medido en Deloitte.",
+      "microsoftSource": "https://learn.microsoft.com/en-us/sharepoint/manage-access-agents-in-sharepoint",
+      "deloitteSource": "",
+      "tasks": [
+        "agent",
+        "review"
+      ],
+      "tools": [
+        "Agentes de SharePoint",
+        "SharePoint",
+        "Excel"
+      ],
+      "corporateAreas": [
+        "common"
+      ],
+      "preparation": [
+        "files",
+        "content",
+        "agent"
+      ],
+      "coreRelation": "complementary",
+      "coreLessons": [
+        "Agent Builder",
+        "Contexto y fuentes"
+      ],
+      "coreRationale": "Complementa la creación de COR-12 con validación reproducible y mantenimiento de calidad. No vuelve a enseñar la construcción básica de un agente del troncal.",
+      "distinction": "Complementa la creación de COR-12 con validación reproducible y mantenimiento de calidad. No vuelve a enseñar la construcción básica de un agente del troncal.",
+      "addedOn": "2026-09-08",
+      "input": "Agente ya creado, documentos de prueba, respuestas esperadas validadas y cuentas de prueba autorizadas con diferentes permisos.",
+      "steps": [
+        "Diseñar una batería de preguntas frecuentes, fuera de alcance, ambiguas y sin evidencia; fijar qué debe contener cada respuesta.",
+        "Ejecutar cada prueba en el agente con las cuentas autorizadas y registrar respuesta, citas y resultado. Cada persona utiliza su propia cuenta.",
+        "Comparar con el criterio esperado, clasificar fallos y corregir fuentes o instrucciones según el origen del problema.",
+        "Repetir las pruebas fallidas y una muestra de las anteriores. Acordar qué incidencias deben resolverse antes de compartir el agente."
+      ],
+      "examplePrompt": "A partir de estas fuentes, diseña 15 preguntas de prueba: habituales, ambiguas, sin respuesta y fuera de alcance. Indica evidencia esperada y criterio de aprobado. Deja en blanco el resultado observado: lo completaremos al ejecutar cada prueba en el agente.",
+      "additionalSources": [
+        {
+          "label": "Crear un agente",
+          "url": "https://support.microsoft.com/en-us/sharepoint/copilot-in-sharepoint/create-an-agent-in-sharepoint"
+        }
+      ]
+    },
+    {
+      "id": "COR-58",
+      "block": "Áreas Corporativas",
+      "title": "Qué pedir al equipo y cómo pedirlo bien",
+      "description": "Transforma los procedimientos y ejemplos de solicitudes en una guía de servicios del equipo: qué puede pedir otra persona, por qué canal, con qué información y qué resultado esperar. Sirve también para peticiones dentro de la misma área.",
+      "primary": "Copilot en Word + Copilot Chat",
+      "involved": "Word; Copilot Chat",
+      "areas": {
+        "A&A": "●",
+        "T&L": "●",
+        "SRT": "●",
+        "T&T": "●",
+        "Corp": "●"
+      },
+      "profiles": "Aplicable a cualquier área corporativa; personas que mantienen documentos, registros o procesos del equipo.",
+      "audiences": [
+        "staff",
+        "manager"
+      ],
+      "status": "Banco extendido, no incluido aún",
+      "coverage": "Mayoría del negocio",
+      "route": "Núcleo común",
+      "family": "Solicitudes y seguimientos",
+      "deliverable": "Guía de solicitudes y plantillas de entrada listas para validar con el equipo.",
+      "maturity": "GA condicionado · comprobar licencia y disponibilidad en el entorno",
+      "level": "N1 · Nativo",
+      "conditions": "Licencia y funciones habilitadas por la organización. La práctica utiliza fuentes accesibles y una muestra acotada. La persona revisa las propuestas y ejecuta los cambios en los archivos o sistemas. ",
+      "humanReview": "Confirmar canales, requisitos y plazos; no crear compromisos de servicio que el equipo no haya aceptado.",
+      "auditFinding": "Propuesta de práctica común a todas las áreas corporativas, contrastada con funciones documentadas por Microsoft. La ficha define un ejercicio supervisado; no acredita una implantación ni un ahorro medido en Deloitte.",
+      "microsoftSource": "https://support.microsoft.com/en-gb/copilot-word",
+      "deloitteSource": "",
+      "tasks": [
+        "request",
+        "draft"
+      ],
+      "tools": [
+        "Word",
+        "Copilot Chat"
+      ],
+      "corporateAreas": [
+        "common"
+      ],
+      "preparation": [
+        "files"
+      ],
+      "coreRelation": "complementary",
+      "coreLessons": [
+        "Word",
+        "Ejemplos y prompts"
+      ],
+      "coreRationale": "COR-44 registra solicitudes recibidas y COR-45 comprueba un expediente. Esta práctica actúa antes: diseña una entrada clara para reducir peticiones incompletas, sin crear un helpdesk integrado.",
+      "distinction": "COR-44 registra solicitudes recibidas y COR-45 comprueba un expediente. Esta práctica actúa antes: diseña una entrada clara para reducir peticiones incompletas, sin crear un helpdesk integrado.",
+      "addedOn": "2026-09-08",
+      "input": "Procedimientos aprobados, tipos de peticiones habituales, canales vigentes y ejemplos de solicitudes completas e incompletas.",
+      "steps": [
+        "Extraer tipos de petición y distinguir condiciones confirmadas de datos aún por acordar.",
+        "Crear una ficha por petición con alcance, entradas obligatorias, canal, resultado y plazo únicamente si está aprobado.",
+        "Probar la guía con ejemplos reales y ajustar instrucciones que generen dudas antes de compartirla."
+      ],
+      "examplePrompt": "Crea una guía para solicitar ayuda al equipo usando estas fuentes. Por tipo de petición, indica qué incluye, qué datos aportar, canal y resultado esperado. Solo incluye plazos si están expresamente aprobados. Prueba cada ficha con los ejemplos."
+    },
+    {
+      "id": "COR-59",
+      "block": "Áreas Corporativas",
+      "title": "Dónde se atasca un proceso interno",
+      "description": "Analiza las fechas y estados de un registro de trabajo para localizar esperas, vueltas atrás y acumulación de pendientes. Permite priorizar mejoras de cualquier proceso interno con evidencia de sus etapas.",
+      "primary": "Copilot en Excel",
+      "involved": "Excel",
+      "areas": {
+        "A&A": "●",
+        "T&L": "●",
+        "SRT": "●",
+        "T&T": "●",
+        "Corp": "●"
+      },
+      "profiles": "Aplicable a cualquier área corporativa; personas que preparan, coordinan o revisan trabajo interno.",
+      "audiences": [
+        "staff",
+        "manager",
+        "leadership"
+      ],
+      "status": "Banco extendido, no incluido aún",
+      "coverage": "Todos los perfiles",
+      "route": "Núcleo común",
+      "family": "Datos, cálculo y análisis",
+      "deliverable": "Mapa de tiempos y cuellos de botella con hipótesis de mejora sustentadas en registros.",
+      "maturity": "GA condicionado · comprobar licencia y disponibilidad en el entorno",
+      "level": "N1 · Nativo",
+      "conditions": "Licencia y funciones habilitadas por la organización. La práctica utiliza fuentes accesibles y una muestra acotada. La persona revisa las propuestas y ejecuta los cambios en los archivos o sistemas. ",
+      "humanReview": "Validar calendario, pausas y cobertura; no confundir tiempo transcurrido con tiempo trabajado ni atribuir causas que no aparecen en los datos.",
+      "auditFinding": "Propuesta de práctica común a todas las áreas corporativas, contrastada con funciones documentadas por Microsoft. La ficha define un ejercicio supervisado; no acredita una implantación ni un ahorro medido en Deloitte.",
+      "microsoftSource": "https://support.microsoft.com/en-us/office/agent-mode-in-excel-frontier-a2fd6fe4-97ac-416b-b89a-22f4d1357c7a",
+      "deloitteSource": "",
+      "tasks": [
+        "analyse",
+        "plan"
+      ],
+      "tools": [
+        "Excel"
+      ],
+      "corporateAreas": [
+        "common"
+      ],
+      "preparation": [
+        "files"
+      ],
+      "coreRelation": "complementary",
+      "coreLessons": [
+        "Excel",
+        "Analyst"
+      ],
+      "coreRationale": "Amplía el análisis de Excel a duración y retrabajo de un proceso. COR-51 compara capacidad prevista; este caso explica dónde se acumula el tiempo en registros históricos.",
+      "distinction": "Amplía el análisis de Excel a duración y retrabajo de un proceso. COR-51 compara capacidad prevista; este caso explica dónde se acumula el tiempo en registros históricos.",
+      "addedOn": "2026-09-08",
+      "input": "Registro anonimizado de casos con ID, etapas, fechas de entrada y salida, estado abierto o cerrado y calendario de trabajo acordado.",
+      "steps": [
+        "Comprobar secuencia de fechas, etapas ausentes y diferencias entre casos cerrados y aún abiertos.",
+        "Calcular tiempos por etapa, mediana y percentiles; identificar esperas y repeticiones con referencia al registro.",
+        "Comparar periodos o tipos de solicitud y proponer hipótesis que el propietario del proceso debe contrastar."
+      ],
+      "examplePrompt": "Analiza el registro por etapas. Separa casos abiertos y cerrados, comprueba fechas imposibles y calcula tiempos con el calendario aportado. Señala cuellos de botella y evidencia. Distingue observación de hipótesis; no atribuyas una causa sin datos."
+    },
+    {
+      "id": "COR-60",
+      "block": "Áreas Corporativas",
+      "title": "De una petición ambigua a requisitos comprobables",
+      "description": "Convierte una necesidad interna en un encargo que otra persona pueda ejecutar y validar. Separa resultado esperado, alcance, dependencias y criterios de aceptación para evitar entregas que no resuelven la petición.",
+      "primary": "Copilot en Word + Copilot Chat",
+      "involved": "Word; Copilot Chat",
+      "areas": {
+        "A&A": "●",
+        "T&L": "●",
+        "SRT": "●",
+        "T&T": "●",
+        "Corp": "●"
+      },
+      "profiles": "Aplicable a cualquier área corporativa; personas que preparan, coordinan o revisan trabajo interno.",
+      "audiences": [
+        "staff",
+        "manager",
+        "leadership"
+      ],
+      "status": "Banco extendido, no incluido aún",
+      "coverage": "Todos los perfiles",
+      "route": "Núcleo común",
+      "family": "Documentos y materiales",
+      "deliverable": "Ficha de encargo con requisitos, preguntas resueltas y criterios de aceptación verificables.",
+      "maturity": "GA condicionado · comprobar licencia y disponibilidad en el entorno",
+      "level": "N1 · Nativo",
+      "conditions": "Licencia y funciones habilitadas por la organización. La práctica utiliza fuentes accesibles y una muestra acotada. La persona revisa las propuestas y ejecuta los cambios en los archivos o sistemas. ",
+      "humanReview": "Confirmar que los requisitos y límites han sido acordados; mantener como propuesta cualquier supuesto no validado.",
+      "auditFinding": "Propuesta de práctica común a todas las áreas corporativas, contrastada con funciones documentadas por Microsoft. La ficha define un ejercicio supervisado; no acredita una implantación ni un ahorro medido en Deloitte.",
+      "microsoftSource": "https://support.microsoft.com/en-gb/copilot-word",
+      "deloitteSource": "",
+      "tasks": [
+        "draft",
+        "review",
+        "plan"
+      ],
+      "tools": [
+        "Word",
+        "Copilot Chat"
+      ],
+      "corporateAreas": [
+        "common"
+      ],
+      "preparation": [
+        "files"
+      ],
+      "coreRelation": "complementary",
+      "coreLessons": [
+        "Word",
+        "Ejemplos y prompts"
+      ],
+      "coreRationale": "Complementa la redacción de Word con definición y aceptación del trabajo. A diferencia de COR-45, no verifica documentos contra un checklist ya existente: ayuda a acordar qué se debe entregar.",
+      "distinction": "Complementa la redacción de Word con definición y aceptación del trabajo. A diferencia de COR-45, no verifica documentos contra un checklist ya existente: ayuda a acordar qué se debe entregar.",
+      "addedOn": "2026-09-08",
+      "input": "Petición inicial, restricciones conocidas, ejemplos del resultado deseado y respuestas del solicitante a las preguntas de aclaración.",
+      "steps": [
+        "Identificar ambigüedades, contradicciones y decisiones pendientes antes de redactar el encargo.",
+        "Preparar requisitos numerados y criterios observables, vinculando cada uno a su fuente.",
+        "Crear ejemplos de aceptación y rechazo, revisarlos con el solicitante y cerrar el alcance acordado."
+      ],
+      "examplePrompt": "Convierte esta petición en un encargo verificable. Primero enumera preguntas pendientes. Después separa requisitos confirmados y propuestas, enlaza cada requisito con su fuente y da un ejemplo que lo cumple y otro que no."
+    },
+    {
+      "id": "COR-61",
+      "block": "Áreas Corporativas",
+      "title": "Alternativas de trabajo, comparadas con los mismos criterios",
+      "description": "Prepara una matriz para decidir entre distintas formas de organizar una actividad interna, una secuencia de trabajo o una modalidad de atención. Expone criterios, supuestos y sensibilidad para que la decisión se pueda explicar.",
+      "primary": "Copilot en Excel + Copilot en Word",
+      "involved": "Excel; Word",
+      "areas": {
+        "A&A": "●",
+        "T&L": "●",
+        "SRT": "●",
+        "T&T": "●",
+        "Corp": "●"
+      },
+      "profiles": "Aplicable a cualquier área corporativa; responsables que acuerdan prioridades, criterios y decisiones del equipo.",
+      "audiences": [
+        "manager",
+        "leadership"
+      ],
+      "status": "Banco extendido, no incluido aún",
+      "coverage": "Mayoría del negocio",
+      "route": "Núcleo común",
+      "family": "Datos, cálculo y análisis",
+      "deliverable": "Matriz de alternativas con fuentes, sensibilidad y nota de decisión pendiente de validación.",
+      "maturity": "GA condicionado · comprobar licencia y disponibilidad en el entorno",
+      "level": "N1 · Nativo",
+      "conditions": "Licencia y funciones habilitadas por la organización. La práctica utiliza fuentes accesibles y una muestra acotada. La persona revisa las propuestas y ejecuta los cambios en los archivos o sistemas. ",
+      "humanReview": "Validar pesos y puntuaciones; una cifra agregada no convierte opiniones en hechos ni sustituye la decisión del responsable.",
+      "auditFinding": "Propuesta de práctica común a todas las áreas corporativas, contrastada con funciones documentadas por Microsoft. La ficha define un ejercicio supervisado; no acredita una implantación ni un ahorro medido en Deloitte.",
+      "microsoftSource": "https://support.microsoft.com/en-us/office/agent-mode-in-excel-frontier-a2fd6fe4-97ac-416b-b89a-22f4d1357c7a",
+      "deloitteSource": "",
+      "tasks": [
+        "analyse",
+        "plan"
+      ],
+      "tools": [
+        "Excel",
+        "Word"
+      ],
+      "corporateAreas": [
+        "common"
+      ],
+      "preparation": [
+        "files"
+      ],
+      "coreRelation": "workflow",
+      "coreLessons": [
+        "Excel",
+        "Word"
+      ],
+      "coreRationale": "Traslada los escenarios de Excel a decisiones operativas de cualquier área, sin centrarse en compras o evaluación de proveedores. Se diferencia de COR-51 por comparar alternativas con criterios, no capacidad semanal.",
+      "distinction": "Traslada los escenarios de Excel a decisiones operativas de cualquier área, sin centrarse en compras o evaluación de proveedores. Se diferencia de COR-51 por comparar alternativas con criterios, no capacidad semanal.",
+      "addedOn": "2026-09-08",
+      "input": "Dos o tres alternativas operativas, criterios y pesos acordados, datos disponibles y restricciones obligatorias.",
+      "steps": [
+        "Separar condiciones obligatorias de criterios puntuables y marcar los datos que faltan.",
+        "Construir la matriz con escala común, pesos y fuente de cada valoración; mantener visibles los juicios cualitativos.",
+        "Cambiar los pesos en un escenario alternativo y documentar qué hace cambiar la preferencia y qué debe decidir el responsable."
+      ],
+      "examplePrompt": "Compara estas alternativas con los criterios acordados. Aplica primero las restricciones obligatorias. No puntúes datos desconocidos como cero: márcalos pendientes. Muestra la fórmula y un escenario con otros pesos, indicando cuándo cambia la preferencia."
+    },
+    {
+      "id": "COR-62",
+      "block": "Áreas Corporativas",
+      "title": "Cerrar una iniciativa y reutilizar lo aprendido",
+      "description": "Reúne objetivos, entregas, incidencias y decisiones para explicar qué se consiguió y qué conviene cambiar la próxima vez. Deja recomendaciones vinculadas a evidencias y materiales reutilizables, aunque no haya una reunión de cierre.",
+      "primary": "Copilot en Word + Copilot Chat",
+      "involved": "Word; Copilot Chat",
+      "areas": {
+        "A&A": "●",
+        "T&L": "●",
+        "SRT": "●",
+        "T&T": "●",
+        "Corp": "●"
+      },
+      "profiles": "Aplicable a cualquier área corporativa; personas que preparan, coordinan o revisan trabajo interno.",
+      "audiences": [
+        "staff",
+        "manager",
+        "leadership"
+      ],
+      "status": "Banco extendido, no incluido aún",
+      "coverage": "Todos los perfiles",
+      "route": "Núcleo común",
+      "family": "Revisión documental y calidad",
+      "deliverable": "Nota de cierre con resultados contrastados, aprendizajes, materiales reutilizables y propuestas de mejora.",
+      "maturity": "GA condicionado · comprobar licencia y disponibilidad en el entorno",
+      "level": "N1 · Nativo",
+      "conditions": "Licencia y funciones habilitadas por la organización. La práctica utiliza fuentes accesibles y una muestra acotada. La persona revisa las propuestas y ejecuta los cambios en los archivos o sistemas. ",
+      "humanReview": "No atribuir ahorros o resultados sin medida; validar interpretaciones con el equipo y distinguir propuestas de compromisos aceptados.",
+      "auditFinding": "Propuesta de práctica común a todas las áreas corporativas, contrastada con funciones documentadas por Microsoft. La ficha define un ejercicio supervisado; no acredita una implantación ni un ahorro medido en Deloitte.",
+      "microsoftSource": "https://support.microsoft.com/en-gb/copilot-word",
+      "deloitteSource": "",
+      "tasks": [
+        "review",
+        "draft",
+        "plan"
+      ],
+      "tools": [
+        "Word",
+        "Copilot Chat"
+      ],
+      "corporateAreas": [
+        "common"
+      ],
+      "preparation": [
+        "files"
+      ],
+      "coreRelation": "complementary",
+      "coreLessons": [
+        "Word",
+        "Contexto y fuentes"
+      ],
+      "coreRationale": "COR-47 prepara un relevo de trabajo pendiente; esta práctica evalúa una iniciativa terminada y convierte sus evidencias en mejoras reutilizables. No requiere transcripción de reuniones.",
+      "distinction": "COR-47 prepara un relevo de trabajo pendiente; esta práctica evalúa una iniciativa terminada y convierte sus evidencias en mejoras reutilizables. No requiere transcripción de reuniones.",
+      "addedOn": "2026-09-08",
+      "input": "Objetivos iniciales, registro de entregas, incidencias, decisiones y comentarios sobre una iniciativa terminada.",
+      "steps": [
+        "Contrastar los objetivos con la evidencia de entrega y separar conseguido, parcial y no acreditado.",
+        "Agrupar incidencias y decisiones; distinguir hechos, hipótesis sobre las causas y opiniones de participantes.",
+        "Preparar recomendaciones para la siguiente edición, materiales reutilizables y acciones que deberán acordarse con sus responsables."
+      ],
+      "examplePrompt": "Prepara el cierre con las fuentes aportadas. Por objetivo indica resultado acreditado y evidencia. Separa hechos de hipótesis, y por recomendación identifica qué incidencia resuelve y qué habría que validar antes de aplicarla."
     }
   ],
   "classificationUpdatedAt": "2026-09-08",

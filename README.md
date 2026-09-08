@@ -1,6 +1,6 @@
 # Deloitte · Banco de casos de Microsoft 365 Copilot
 
-Aplicación con 217 casos de uso, búsqueda, filtros combinables y fichas de detalle. Incluye 12 nuevas prácticas comunes a todas las áreas corporativas.
+Aplicación con 227 casos de uso, búsqueda, filtros combinables y fichas de detalle. Incluye 22 nuevas prácticas comunes a todas las áreas corporativas.
 
 - Repositorio: https://github.com/Garzer09/Deloitte-Use-Cases
 - Web: https://spiralia-deloitte-use-cases.vercel.app
@@ -29,13 +29,13 @@ La aplicación principal no necesita variables de entorno ni una base de datos: 
 
 ## Buscar y seleccionar casos
 
-Los filtros principales son Área Deloitte, Tarea, Herramienta o capacidad y Perfil. Las opciones múltiples se suman dentro de un filtro (OR) y se cruzan entre filtros (AND). Los recuentos de cada opción mantienen el contexto de los otros filtros.
+Los filtros principales son Área Deloitte, Tarea, Herramienta o capacidad y Nivel profesional. Las opciones múltiples se suman dentro de un filtro (OR) y se cruzan entre filtros (AND). Los recuentos de cada opción mantienen el contexto de los otros filtros.
 
-Al elegir Corporativas aparece Subárea. Los casos etiquetados como comunes a todas las áreas corporativas también aparecen en cada subárea. «Común» describe aplicabilidad entre áreas; los perfiles describen quién suele ejecutar la práctica.
+Al elegir Corporativas aparece Subárea. Los casos etiquetados como comunes a todas las áreas corporativas también aparecen en cada subárea. «Común» describe aplicabilidad entre áreas; el nivel profesional distingue Staff, Managers y Directores / Socios, y puede combinarse con cualquier área.
 
-«Más filtros» incluye preparación, relación con el troncal, aplicabilidad directa/adaptada, origen, cobertura, disponibilidad y cartera. «Nuevos primero» sitúa las 12 incorporaciones al inicio. El buscador ignora tildes y mayúsculas y busca todas las palabras, aunque estén separadas.
+«Más filtros» incluye preparación, relación con el troncal, aplicabilidad directa/adaptada, origen, cobertura, disponibilidad y cartera. «Nuevos primero» sitúa las 22 incorporaciones al inicio. El buscador ignora tildes y mayúsculas y busca todas las palabras, aunque estén separadas.
 
-La clasificación se revisó el 08/09/2026. Las notas funcionales anteriores conservan su fecha original: no se ha convertido una revisión editorial en una nueva auditoría de producto. Consulta [los criterios del catálogo](docs/criterios-catalogo.md).
+La clasificación se revisó el 08/09/2026. COR-12 desarrolla la creación de un agente de SharePoint y COR-40 corrige sus requisitos administrativos. Las demás notas funcionales anteriores conservan su fecha original: no se ha convertido una revisión editorial en una nueva auditoría de producto. Consulta [los criterios del catálogo](docs/criterios-catalogo.md).
 
 ## Dónde hacer cambios
 
@@ -74,7 +74,7 @@ El proyecto original también incluye Vinext y soporte opcional para Sites/Cloud
 Se conservan `worker/`, `build/`, `.openai/hosting.json`, `db/`, `drizzle/` y `examples/d1/` para mantener esa compatibilidad. Las carpetas de base de datos contienen soporte opcional y ejemplos, no una dependencia de la aplicación principal.
 
 ```bash
-npm test       # Compila con Vinext y verifica los filtros, el HTML y los 217 casos.
+npm test       # Compila con Vinext y verifica los filtros, el HTML y los 227 casos.
 npm run lint  # Revisión de código.
 ```
 

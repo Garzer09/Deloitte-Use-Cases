@@ -149,7 +149,7 @@ function CaseModal({
           <dl>
             <div><dt>Tareas</dt><dd>{item.tasks.map(v => labelFor(taskOptions, v)).join(" · ")}</dd></div>
             <div><dt>Herramientas y capacidades</dt><dd>{item.tools.join(" · ")}</dd></div>
-            <div><dt>Perfiles que suelen ejecutar el caso</dt><dd>{item.audiences.map(v => labelFor(audienceOptions, v)).join(" · ")}</dd></div>
+            <div><dt>Niveles profesionales a los que se dirige</dt><dd>{item.audiences.map(v => labelFor(audienceOptions, v)).join(" · ")}</dd></div>
             {item.corporateAreas.length > 0 && <div><dt>Aplicación en Corporativas</dt><dd>{item.corporateAreas.map(v => labelFor(corporateAreaOptions, v)).join(" · ")}</dd></div>}
             <div><dt>Preparación necesaria</dt><dd>{item.preparation.map(v => labelFor(preparationOptions, v)).join(" · ")}</dd></div>
             <div><dt>Relación con el troncal</dt><dd><strong>{labelFor(coreOptions, item.coreRelation)}</strong><p>{item.coreRationale}</p>{item.coreLessons.length > 0 && <small>Referencias del troncal: {item.coreLessons.join(" · ")}</small>}</dd></div>
@@ -193,7 +193,7 @@ function CaseModal({
           <section className="detail-panel audit-panel">
             <span className="section-kicker">Viabilidad y revisión</span>
             <p>{item.auditFinding}</p>
-            <p className="source-date">{item.addedOn ? "Propuesta añadida el 08/09/2026. Comprobar la disponibilidad en el entorno antes de impartirla." : "Nota funcional del catálogo de 31/07/2026. Clasificación revisada el 08/09/2026; verificar disponibilidad actual antes de impartirlo."}</p>
+            <p className="source-date">{item.addedOn ? "Propuesta añadida el 08/09/2026. Comprobar la disponibilidad en el entorno antes de impartirla." : item.reviewedOn ? "Ficha y fuentes funcionales revisadas el 08/09/2026. Comprobar la disponibilidad en el entorno antes de impartirla." : "Nota funcional del catálogo de 31/07/2026. Clasificación revisada el 08/09/2026; verificar disponibilidad actual antes de impartirlo."}</p>
             <p className="status-line">
               <strong>Cartera:</strong> {item.status}
             </p>
@@ -230,6 +230,7 @@ function CaseModal({
             <a href={item.microsoftSource} target="_blank" rel="noreferrer">
               Microsoft ↗
             </a>
+            {item.additionalSources?.map(source => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>)}
             {item.deloitteSource && <a href={item.deloitteSource} target="_blank" rel="noreferrer">
               Deloitte ↗
             </a>}
@@ -309,7 +310,7 @@ export default function Home() {
               <h2>Encuentra la opción adecuada</h2>
             </div>
             <p>
-              Busca por tarea, perfil o funcionalidad. Combina filtros para
+              Busca por tarea, nivel profesional o funcionalidad. Combina filtros para
               seleccionar ejemplos aplicables al trabajo de cada equipo.
             </p>
           </div>
