@@ -1,98 +1,69 @@
-# vinext-starter
+# Deloitte · Banco de casos de Microsoft 365 Copilot
 
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
+Aplicación con 205 casos de uso, búsqueda, filtros y fichas de detalle.
 
-## Prerequisites
+- Repositorio: https://github.com/Garzer09/Deloitte-Use-Cases
+- Web: https://spiralia-deloitte-use-cases.vercel.app
+- Proyecto de Vercel: `spiralia-deloitte-use-cases`
+- Rama de producción: `main`
 
-- Node.js `>=22.13.0`
+## Desarrollo local con Next.js
 
-## Quick Start
+Requiere Node.js 24 LTS y npm. Desde una carpeta nueva:
 
 ```bash
-npm install
-npm run dev
-npm run build
+git clone https://github.com/Garzer09/Deloitte-Use-Cases.git
+cd Deloitte-Use-Cases
+npm ci
+npx next dev
 ```
 
-This starter does not use `wrangler.jsonc`.
+Abre la dirección local que muestra el terminal. Para compilar y arrancar la versión de producción:
 
-## Included Shape
-
-- edit site code under `app/`
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/schema.ts` starts intentionally empty
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
-
-## Workspace Auth Headers
-
-OpenAI workspace sites can read the current user's email from
-`oai-authenticated-user-email`.
-
-SIWC-authenticated workspace sites may also receive
-`oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-`name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-`oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-
-Treat the full name as optional and fall back to email when it is absent:
-
-```tsx
-import { headers } from "next/headers";
-
-export default async function Home() {
-  const requestHeaders = await headers();
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
-
-  const displayName = fullName ?? email;
-  // ...
-}
+```bash
+npx next build
+npx next start
 ```
 
-## Optional Dispatch-Owned ChatGPT Sign-In
+La aplicación principal no necesita variables de entorno ni una base de datos: los casos se leen de `data/cases.json`.
 
-Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-optional or required ChatGPT sign-in:
+## Dónde hacer cambios
 
-- Use `getChatGPTUser()` for optional signed-in UI.
-- Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
-  anonymous visitors through Sign in with ChatGPT.
-- Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
-  browser links or actions.
-- Pass a same-origin relative `returnTo` path for the destination after sign-in
-  or sign-out. The helper validates and safely encodes it.
-- Mark protected pages with `export const dynamic = "force-dynamic"` because
-  they depend on per-request identity headers.
+| Archivo | Contenido |
+| --- | --- |
+| `data/cases.json` | Casos de uso y sus campos |
+| `app/page.tsx` | Página, búsqueda, filtros y fichas |
+| `app/globals.css` | Estilos y diseño adaptable |
+| `app/layout.tsx` | Título, metadatos e iconos |
+| `public/` | Imágenes y marcas |
+| `vercel.json` | Configuración del despliegue con Next.js |
 
-Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-OAuth cookies, and identity header injection. Do not implement app routes for
-those reserved paths. Routes that do not import and call the helper remain
-anonymous-compatible.
+## Publicar cambios
 
-SIWC establishes identity only; it does not prove workspace membership. Use the
-Sites hosting platform's access policy controls for workspace-wide restrictions,
-or enforce explicit server-side membership or allowlist checks.
+Crea una rama para cada cambio, comprueba la compilación y abre un pull request hacia `main`. Vercel está conectado a este repositorio: los cambios en `main` generan un despliegue de producción. Las ramas y los pull requests permiten revisar despliegues de vista previa.
 
-Use SIWC for account pages, user-specific dashboards, saved records, and write
-actions tied to the current ChatGPT user. Leave public content anonymous.
+```bash
+git switch -c mejora-catalogo
+# Edita los archivos y comprueba la compilación.
+npx next build
+git add app/page.tsx
+git commit -m "Mejorar el catálogo de casos"
+git push -u origin mejora-catalogo
+```
 
-## Useful Commands
+Selecciona en `git add` los archivos que hayas modificado. No subas `.env`, credenciales, `node_modules`, `.next` ni `.vercel`; están excluidos mediante `.gitignore`.
 
-- `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
-- `npm test`: build the starter and verify its rendered loading skeleton
-- `npm run db:generate`: generate Drizzle migrations after schema changes
+## Compatibilidad con el proyecto original
 
-## Learn More
+Se conserva el código y el historial de la versión desplegada en Vercel el 31 de julio de 2026, cuyo commit es `f288ee4668e3849817322d8cd490b82df7f4df65`.
 
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+El proyecto original también incluye Vinext y soporte opcional para Sites/Cloudflare. Por eso `npm run dev`, `npm run build` y `npm start` usan Vinext. Para trabajar con el mismo motor de Vercel utiliza los comandos `npx next ...` de arriba; `vercel.json` ya establece `npx next build` como compilación de producción.
+
+Se conservan `worker/`, `build/`, `.openai/hosting.json`, `db/`, `drizzle/` y `examples/d1/` para mantener esa compatibilidad. Las carpetas de base de datos contienen soporte opcional y ejemplos, no una dependencia de la aplicación principal.
+
+```bash
+npm test       # Compila con Vinext y verifica el HTML y los 205 casos.
+npm run lint  # Revisión de código.
+```
+
+Las marcas visuales existentes se mantienen por autorización expresa para este proyecto.
